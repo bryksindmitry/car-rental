@@ -1,0 +1,20 @@
+.menu{
+    display: flex;
+    justify-content: center;
+    &__item{
+        padding: 0 15px;
+        display: flex;
+        align-items:center;
+        text-align: center;
+    }
+    &__link{
+        font-size: 16px;
+        text-decoration: none;
+        color:#a2957a;
+        font-weight: 700;
+    }
+    &__link:hover{
+        color:#573400;
+    }
+    
+}
