@@ -1,16 +1,8 @@
 .entrance{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    @include setContainer(flex,inherit, center, center, 0);
 }
 
 .entrance a{
-    font-size: 16px;
-    font-weight: 700;
-    color:#ff8003;
-    text-decoration: none;
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
-    
+    @include setFont($orange, 16px, none, 700);
+    @include setContainer(flex,center, inherit, inherit, 0 15px);   
 }

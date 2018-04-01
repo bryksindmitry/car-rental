@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Logo from '../Logo'
 import Menu from '../Menu'
 import Entrance from '../Entrance'
-import './style.scss'
 
 
 export default class Header extends Component{

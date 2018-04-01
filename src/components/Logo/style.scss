@@ -1,11 +1,9 @@
 .logo{
-    font-size:40px;
-    font-weight: 600;
     &__car{
-        color:#573400;
+        @include setFont($brown, 40px, none,600);
     }
     &__rental{
-        color:#ff8003;
+        @include setFont($orange, 40px, none,600);
     }
     
 }

@@ -1,0 +1,28 @@
+
+$orange: #ff8003;
+$brown: #573400;
+$light-brown:#a2957a;
+
+
+@mixin setFont($color,$size, $decoration, $weight){
+    color:$color;
+    text-decoration: $decoration;
+    font: { 
+        size: $size;
+        weight: $weight;
+    }
+}
+
+@mixin setContainer($display, $align-items, $justify-content,$text-align, $padding){
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    text-align: $text-align;
+    padding: $padding;
+}
+
+
+@import './components/Entrance/style.scss';
+@import './components/Header/style.scss';
+@import './components/Logo/style.scss';
+@import './components/Menu/style.scss';

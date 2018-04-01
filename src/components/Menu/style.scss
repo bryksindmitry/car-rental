@@ -1,20 +1,13 @@
 .menu{
-    display: flex;
-    justify-content: center;
+        @include setContainer(flex, inherit, center, inherit,0);
     &__item{
-        padding: 0 15px;
-        display: flex;
-        align-items:center;
-        text-align: center;
+        @include setContainer(flex, center, inherit, center, 0 15px);
     }
     &__link{
-        font-size: 16px;
-        text-decoration: none;
-        color:#a2957a;
-        font-weight: 700;
+        @include setFont($light-brown,16px,none,700);
     }
     &__link:hover{
-        color:#573400;
-    }
-    
+        color: $brown;
+    } 
 }
+
