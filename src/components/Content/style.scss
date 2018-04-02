@@ -1,0 +1,25 @@
+.main{}
+
+.main__wrapper{
+    justify-content: space-between;
+}
+
+.right-side .calculator{
+    width:222px;
+}
+
+.right-side .calculator .calculator__title{
+    font-size: 25px;
+}
+
+.right-side .calculator .calculator__input{
+    width:100%;
+}
+
+.right-side .calculator .calculator__button{
+    width:95%;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: none;
+}
+

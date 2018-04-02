@@ -6,13 +6,14 @@ export default class Content extends Component{
     render(){
         return(
             <div className="main">
+               
                 <div className="wrapper main__wrapper">
-                    <CategoryList/>
                     <div className="main-content">
-                        <OffersList/>   
-                        <div className="right-side">
-                          <Calculator/>
-                        </div>
+                        <CategoryList/>
+                        <OffersList/>    
+                    </div>
+                    <div className="right-side">
+                        <Calculator/>
                     </div>
                 </div>
             </div>

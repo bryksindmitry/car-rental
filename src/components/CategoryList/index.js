@@ -1,5 +1,5 @@
 import React, { Component }  from 'react'
-
+import CategoryButton from '../CategoryButton'
 export default class CategoryList extends Component{
     render(){
         return(
@@ -9,18 +9,10 @@ export default class CategoryList extends Component{
                             Speciall Offers
                     </div>
                     <div className="category__buttons">
-                        <button className="category__button action__button">
-                            All Offers
-                        </button>
-                        <button className="category__button">
-                            Category 1
-                        </button>
-                        <button className="category__button">
-                            Category 2
-                        </button>
-                        <button className="category__button">
-                            Category 3
-                        </button>
+                        <CategoryButton name={"All Offers"}/>
+                        <CategoryButton name={"Category 1"}/>
+                        <CategoryButton name={"Category 2"}/>
+                        <CategoryButton name={"Category 3"}/>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,12 @@
+.category{
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        border-bottom:solid 1px #d9dfdc;
+        padding-bottom: 10px;
+    }
+    &__title{
+        font-size: 30px;
+        color:#423f3c;
+    }
+}

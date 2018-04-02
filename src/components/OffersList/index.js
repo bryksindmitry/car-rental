@@ -1,33 +1,17 @@
 import React, { Component } from 'react'
+import Offer from '../Offer'
 
 export default class OffersList extends Component{
     render(){
+        let num = 10; // temporary count for offers;
+        let listOffers = [];
+        for(let i = 0; i < 10; i++){
+            listOffers.push(<Offer/>)
+        }
         return(
             <div className="offers-list">
-                            <div className="offer-item">
-                                <div className="item-wrapper">
-                                    <div className="price">
-                                <span className="price__from">
-                                    from
-                                </span>
-                                <span className="price__value">
-                                    $ 55.00
-                                </span>
-                            </div>
-                            <div className="offer__text">
-                                <div className="offer__title">
-                                    Duis sed odio sit amet nibh vulputate cursus 
-                                </div>
-                                <div className="offer__description">
-                                    Nam nec tellus a odio tincidunt auctor a ornare odio
-                                </div>
-                            </div>
-                            <button className="offer__view-more">
-                                + View Details
-                            </button>
-                        </div>
-                        </div>
-                        </div>
+                  {listOffers}
+            </div>
         )
     }
 }
