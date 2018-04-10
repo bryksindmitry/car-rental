@@ -8,10 +8,8 @@
     
 }
 
-@media(min-width:320px) and (max-width:560px){
+@media(min-width:$smartphone) and (max-width:$tablet){
    .logo{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+       @include setContainer(flex, center, center, inherit, 0px);
    }
 }

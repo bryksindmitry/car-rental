@@ -1,69 +1,6 @@
 // @mixin setFont($color,$size, $decoration, $weight)
-.offer-item{
-    background: #fff;
-    padding:11px;
-    width:877px;
-    margin-top:17px;
-    box-shadow: 1px 3px 2px rgba(0,0,0,0.2);
-    border-radius: 5px;
-}
-.item-wrapper{
-    background: #fbf7f1;
-    border-radius: 5px;
-    display: flex; 
-    justify-content: space-between;
-    border: 1px dotted #8c8986;  
-}
 
-.price{
-    background:#ffa903;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;  
-    padding:15px 25px;
-    text-align: center;
-    border: 1px dotted #8c8986; 
-    &__from{
-        @include setFont($brown,14px, none, 400);
-    }
-    &__value{
-        @include setFont($dark-brown,17px, none, 600);
-    }
-}
-
-.offer{
-    &__text{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        
-    }
-    &__title{
-        font-size: 22px;
-        color:#573400;
-        font-weight: 600;
-      
-    }
-    &__description{
-        font-size: 16px;
-        color:#909090;
-        font-weight: 600;
-     
-    }
-    &__view-more{
-        border: none;
-        color:#baaa85;
-        text-decoration: underline;
-        background: #fbf7f1;
-        cursor: pointer;
-    }
-    &__view-more:focus { 
-        outline:0 !important; 
-    }
-}
-
-@media(min-width:320px) and (max-width:560px){
+@media(min-width:$smartphone) and (max-width:$tablet){
     .offer-item{
         background: #fff;
         padding:11px;
@@ -131,14 +68,134 @@
         }
     }
 }
-@media(min-width:561px) and (max-width:1200px){
-    .main-content{
-        width:inherit;
+
+@media(min-width:$tablet) and (max-width:$desktop){
+.offer-item{
+    background: #fff;
+    padding:11px;
+    width:100%;
+    margin-top:17px;
+    box-shadow: 1px 3px 2px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.item-wrapper{
+    background: #fbf7f1;
+    border-radius: 5px;
+    display: flex; 
+    justify-content: space-between;
+    border: 1px dotted #8c8986;  
+}
+
+.price{
+    background:#ffa903;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+    padding:15px 25px;
+    text-align: center;
+    border: 1px dotted #8c8986; 
+    &__from{
+        @include setFont($brown,14px, none, 400);
+    }
+    &__value{
+        @include setFont($dark-brown,17px, none, 600);
     }
 }
 
-@media(min-width:1200px){
-    .main-content{
-        width:inherit;
+.offer{
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    &__title{
+        font-size: 22px;
+        color:#573400;
+        font-weight: 600;
+      
+    }
+    &__description{
+        font-size: 16px;
+        color:#909090;
+        font-weight: 600;
+     
+    }
+    &__view-more{
+        border: none;
+        color:#baaa85;
+        text-decoration: underline;
+        background: #fbf7f1;
+        cursor: pointer;
+    }
+    &__view-more:focus { 
+        outline:0 !important; 
+    }
+}
+}
+@media(min-width:$desktop){
+    .offer-item{
+        background: #fff;
+        padding:11px;
+        width:877px;
+        margin-top:17px;
+        box-shadow: 1px 3px 2px rgba(0,0,0,0.2);
+        border-radius: 5px;
+    }
+    .item-wrapper{
+        background: #fbf7f1;
+        border-radius: 5px;
+        display: flex; 
+        justify-content: space-between;
+        border: 1px dotted #8c8986;  
+    }
+    
+    .price{
+        background:#ffa903;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;  
+        padding:15px 25px;
+        text-align: center;
+        border: 1px dotted #8c8986; 
+        &__from{
+            @include setFont($brown,14px, none, 400);
+        }
+        &__value{
+            @include setFont($dark-brown,17px, none, 600);
+        }
+    }
+    
+    .offer{
+        &__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+        }
+        &__title{
+            font-size: 22px;
+            color:#573400;
+            font-weight: 600;
+          
+        }
+        &__description{
+            font-size: 16px;
+            color:#909090;
+            font-weight: 600;
+         
+        }
+        &__view-more{
+            border: none;
+            color:#baaa85;
+            text-decoration: underline;
+            background: #fbf7f1;
+            cursor: pointer;
+        }
+        &__view-more:focus { 
+            outline:0 !important; 
+        }
     }
 }

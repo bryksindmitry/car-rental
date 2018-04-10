@@ -2,11 +2,13 @@ $smartphone: 320px;
 $tablet: 580px;
 $desktop: 1200px;
 
+$white: #fff;
 $orange: #ff8003;
 $dark-brown: #573400;
 $brown:#6a573a;
 $light-brown:#a2957a;
 $dark-gray: #423f3c;
+$gray:#797b7d; 
 
 
 
@@ -27,7 +29,7 @@ $dark-gray: #423f3c;
     padding: $padding;
 }
 
-
+@import './general.scss';
 @import './components/Entrance/style.scss';
 @import './components/Header/style.scss';
 @import './components/Logo/style.scss';
@@ -38,4 +40,3 @@ $dark-gray: #423f3c;
 @import './components/OffersList/style.scss';
 @import './components/Offer/style.scss';
 @import './components/Calculator/style.scss';
-@import './general.scss';

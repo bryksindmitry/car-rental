@@ -1,78 +1,124 @@
 
+
+
+@media(min-width:$smartphone) and (max-width:$tablet){
+
 .calculator{
-    width:360px;
+    width:100%;
     background: #dce7ef;
     border:solid 1px #fff;
     border-radius: 5px;
     margin-top:46px;
     margin-bottom: 32px;
     box-shadow: 3px 5px 15px rgba(0,0,0,0.5);
+    &__title{
+        @include setFont($dark-brown,26px,none,700);
+        box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+        background: #a4b9c7;
+        width:80%;
+        border-radius: 0 50px 50px 0;
+        margin: 21px 0;
+        text-transform: uppercase;
+        padding: 18px;
+    }
+    &__element{
+        margin-bottom:36px;
+    }
+    &__wrapper{
+        padding:0 17px;
+    }
+    &__label{
+        @include setFont($gray,16px,none,600);
+        width: 100%;
+        display: block;
+    }
+    &__input{
+        height: 40px;
+        border:solid 1px $gray;
+        border-radius: 3px;
+        padding: 0 10px;
+    }
+    &__button{
+        @include setFont($white,18px,none,600);
+        padding:17px;
+        background:linear-gradient(to top,  #f57e06 0%, #ff9716 36%,  #f3a527 100%); 
+        text-shadow: #BB4906 1px -3px 2px; 
+        border:solid 1px #be650c;
+        border-radius: 5px;
+        text-transform: uppercase;
+        box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+    }
 }
 
-.calculator__title{
-    box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
-    font-size:26px;
-    color:#573400;
-    font-weight: 700;
-    background: #a4b9c7;
-    width:80%;
-    border-radius: 0 50px 50px 0;
-    margin: 21px 0;
-    text-transform: uppercase;
-    padding: 18px;
+    .address_input{
+        width:100%;
+    }
+    .date_input{
+        width: 100%;
+    }
+    .time_select{
+        width:25%;
+    }
 }
-.calculator__element{
-    margin-bottom:36px;
-}
-.calculator__wrapper{
-    padding:0 17px;
+@media(min-width:$tablet) and (max-width:$desktop){
+    .calculator{
+        width:100%;
+        background: #dce7ef;
+        border:solid 1px #fff;
+        border-radius: 5px;
+        margin-top:46px;
+        margin-bottom: 32px;
+        box-shadow: 3px 5px 15px rgba(0,0,0,0.5);
+        &__title{
+            @include setFont($dark-brown,26px,none,700);
+            box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+            background: #a4b9c7;
+            width:80%;
+            border-radius: 0 50px 50px 0;
+            margin: 21px 0;
+            text-transform: uppercase;
+            padding: 18px;
+        }
+        &__element{
+            margin-bottom:36px;
+        }
+        &__wrapper{
+            padding:0 17px;
+        }
+        &__label{
+            @include setFont($gray,16px,none,600);
+            width: 100%;
+            display: block;
+        }
+        &__input{
+            height: 40px;
+            border:solid 1px $gray;
+            border-radius: 3px;
+            padding: 0 10px;
+        }
+        &__button{
+            @include setFont($white,18px,none,600);
+            padding:17px;
+            background:linear-gradient(to top,  #f57e06 0%, #ff9716 36%,  #f3a527 100%); 
+            text-shadow: #BB4906 1px -3px 2px; 
+            border:solid 1px #be650c;
+            border-radius: 5px;
+            text-transform: uppercase;
+            box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+        }
+    }
+    
+        .address_input{
+            width:100%;
+        }
+        .date_input{
+            width: 100%;
+        }
+        .time_select{
+            width:25%;
+        }
 }
 
-.calculator__label{
-    font-size: 16px;
-    font-weight: 600;
-    width: 100%;
-    display: block;
-    color:#797b7d;
-}
-
-.calculator__input{
-    height: 40px;
-    border:solid 1px #797b7d;
-    border-radius: 3px;
-    /*padding: 0 6px;*/
-}
-
-.address_input{
-    width:100%;
-}
-.date_input{
-    width: 70%;
-}
-.time_select{
-    width:25%;
-}
-.calculator__button{
-    padding:17px;
-    color:#fff;
-    font-size:18px;
-    font-weight: 600;
-    background:linear-gradient(to top,  #f57e06 0%, #ff9716 36%,  #f3a527 100%); 
-    text-shadow: #BB4906 1px -3px 2px; 
-    border:solid 1px #be650c;
-    border-radius: 5px;
-    text-transform: uppercase;
-    box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
-}
-
-
-@media(min-width:320px) and (max-width:560px){
-
-}
-@media(min-width:561px) and (max-width:1200px){
-
-}
-
-@media(min-width:1200px){
+@media(min-width:$desktop){
 
 }
