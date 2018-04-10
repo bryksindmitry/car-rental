@@ -3,7 +3,7 @@ import Offer from '../Offer'
 
 export default class OffersList extends Component{
     render(){
-        let num = 10; // temporary count for offers;
+        let num = 10; // temporary amount 10 offers;
         let listOffers = [];
         for(let i = 0; i < 10; i++){
             listOffers.push(<Offer/>)

@@ -1,7 +1,13 @@
+$smartphone: 320px;
+$tablet: 580px;
+$desktop: 1200px;
 
 $orange: #ff8003;
-$brown: #573400;
+$dark-brown: #573400;
+$brown:#6a573a;
 $light-brown:#a2957a;
+$dark-gray: #423f3c;
+
 
 
 @mixin setFont($color,$size, $decoration, $weight){
@@ -32,3 +38,4 @@ $light-brown:#a2957a;
 @import './components/OffersList/style.scss';
 @import './components/Offer/style.scss';
 @import './components/Calculator/style.scss';
+@import './general.scss';

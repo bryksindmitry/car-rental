@@ -13,6 +13,7 @@ export default class Content extends Component{
                         <OffersList/>    
                     </div>
                     <div className="right-side">
+                        <button className="calulator-toggle" type="button">Открыть фильтр</button>
                         <Calculator/>
                     </div>
                 </div>

@@ -1,9 +1,17 @@
 .logo{
     &__car{
-        @include setFont($brown, 40px, none,600);
+        @include setFont($dark-brown, 40px, none,600);
     }
     &__rental{
         @include setFont($orange, 40px, none,600);
     }
     
+}
+
+@media(min-width:320px) and (max-width:560px){
+   .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
 }

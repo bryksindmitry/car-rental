@@ -9,14 +9,15 @@ export default class Header extends Component{
         return(
             <div className="App-header">
                 <header className="header">
-                    <div className="wrapper">
+                    <div className="header__wrapper">
                         <div className="header__logo">
+                            <button className="menu-toggle" type="button"></button>
                           <Logo/> 
                         </div>
                         <div className="header__menu">
                             <Menu/>
                         </div>
-                        <div className="header__control">
+                        <div className="header__control">   
                             <Entrance/>
                         </div>
                     </div>

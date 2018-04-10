@@ -1,13 +1,44 @@
-.menu{
+@media(min-width:$smartphone) and (max-width:$tablet){
+     .menu{
+         @include setContainer(flex, inherit, center, inherit,0);
+         flex-direction:column;
+         flex-basis: 100%;
+         &__item{
+            @include setContainer(flex, center, inherit, center, 0 15px);
+            flex-basis: 100%;
+         }
+         &__link{
+            @include setFont($light-brown,20px,none,700);
+            padding: 10px 0;
+        }
+        &__link:hover{
+            color: $dark-brown;
+        } 
+     }
+ }
+ @media(min-width:$tablet) and (max-width:$desktop){
+    .menu{
+        flex-basis: 100%;
+        @include setContainer(flex, inherit, space-between, inherit,0);
+        &__item{
+            @include setContainer(flex, center, inherit, center, 0 15px);
+        }
+        &__link{
+            @include setFont($light-brown,16px,none,700);
+        }
+    }
+ }
+ @media(min-width:$desktop){
+    .menu{
         @include setContainer(flex, inherit, center, inherit,0);
-    &__item{
-        @include setContainer(flex, center, inherit, center, 0 15px);
+        &__item{
+            @include setContainer(flex, center, inherit, center, 0 15px);
+        }
+        &__link{
+            @include setFont($light-brown,16px,none,700);
+        }
+        &__link:hover{
+            color: $dark-brown;
+        } 
     }
-    &__link{
-        @include setFont($light-brown,16px,none,700);
-    }
-    &__link:hover{
-        color: $brown;
-    } 
 }
-

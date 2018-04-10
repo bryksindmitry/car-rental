@@ -1,3 +1,5 @@
+
+
 .entrance{
     @include setContainer(flex,inherit, center, center, 0);
 }
@@ -5,4 +7,16 @@
 .entrance a{
     @include setFont($orange, 16px, none, 700);
     @include setContainer(flex,center, inherit, inherit, 0 15px);   
+}
+
+
+@media(min-width:320px) and (max-width:560px){
+    .entrance{
+        @include setContainer(flex,center,center,inherit,0);
+        flex-basis: 100%;
+   }
+   .entrance a{
+        @include setFont($orange, 20px, none, 700);
+        padding: 10px;
+   }
 }
