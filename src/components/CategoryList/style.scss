@@ -31,7 +31,15 @@
 }
 
 @media(min-width:$desktop){
-    .main-content{
-        width:inherit;
+    .category{
+        &__header{
+            display: flex;
+            justify-content: space-between;
+            border-bottom:solid 1px #d9dfdc;
+            padding-bottom: 10px;
+        }
+        &__title{
+            @include setFont($dark-gray,30px,none,400);
+        }
     }
 }

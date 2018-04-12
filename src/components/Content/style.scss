@@ -1,4 +1,3 @@
-
 @media(min-width:$smartphone) and (max-width:$tablet){
     .main__wrapper{
         flex-direction: column;
@@ -14,7 +13,6 @@
     .right-side .calculator{
         width:100%;
     }
-
     .calulator-toggle{
         position: absolute;
         top: 0;
@@ -29,7 +27,6 @@
     
 }
 @media(min-width:$tablet) and (max-width:$desktop){
-   
     .main__wrapper{
         justify-content: space-between;
     }
@@ -61,8 +58,37 @@
 }
 
 @media(min-width:$desktop){
+    .calulator-toggle{
+        display: none;
+    }
+    .main__wrapper{
+        width:1140px;
+        display: flex;
+        justify-content: space-between;
+    }
     .main-content{
-        width:inherit;
+        flex-basis: 80%;
+    }
+    .right-side{
+       flex-basis: 20%;
+    }
+    .right-side .calculator{
+        width:100%;
+        
+    }
+
+    .right-side .calculator .calculator__title{
+        font-size: 25px;
+    }
+
+    .right-side .calculator .calculator__input{
+        width:100%;
+    }
+
+    .right-side .calculator .calculator__button{
+        @include setFont(inherit,18px,none,400);
+        width:100%;
+        text-transform: none;
     }
 }
 

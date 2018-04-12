@@ -1,16 +1,4 @@
-
-
-.entrance{
-    @include setContainer(flex,inherit, center, center, 0);
-}
-
-.entrance a{
-    @include setFont($orange, 16px, none, 700);
-    @include setContainer(flex,center, inherit, inherit, 0 15px);   
-}
-
-
-@media(min-width:320px) and (max-width:560px){
+@media(min-width:$smartphone) and (max-width:$tablet){
     .entrance{
         @include setContainer(flex,center,center,inherit,0);
         flex-basis: 100%;
@@ -20,3 +8,22 @@
         padding: 10px;
    }
 }
+@media(min-width:$tablet) and (max-width:$desktop){  
+    .entrance{
+        @include setContainer(flex,inherit, center, center, 0);
+    }
+
+    .entrance a{
+        @include setFont($orange, 16px, none, 700);
+        @include setContainer(flex,center, inherit, inherit, 0 15px);   
+    }
+}
+@media(min-width:$desktop){
+    .entrance{
+        @include setContainer(flex,inherit, center, center, 0);
+    }
+    .entrance a{
+        @include setFont($orange, 16px, none, 700);
+        @include setContainer(flex,center, inherit, inherit, 0 15px);   
+    }
+} 
