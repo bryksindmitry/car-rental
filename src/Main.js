@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Header from './Header'
-import Content from './Content'
+import Header from './components/Header'
+import Offers from './containers/Offers'
 
 export default class Main extends Component{
     state = {
@@ -11,7 +11,8 @@ export default class Main extends Component{
         return(
             <div>
             <Header  open={this.state.open} toggleMenu={this.toggleMenu}/>
-            { !this.state.open ? <Content/> : "" }
+            
+            <Offers open={this.state.open}/>
             </div>
         )
     }

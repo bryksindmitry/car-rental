@@ -1,4 +1,9 @@
 @media(min-width:$smartphone) and (max-width:$tablet){
+    
+    .hide_main{
+        display: none;
+    }
+    
     .main__wrapper{
         flex-direction: column;
     }
@@ -9,8 +14,11 @@
     .right-side {
         order: 1;
     }
-    .right-side .calculator{
+    .right-side__calculator{
         width:100%;
+    }
+    .right-side__calculator {
+
     }
     .calulator-toggle{
         z-index: 2;
@@ -37,24 +45,11 @@
     .right-side{
         width: 100%;
     }
-    .right-side .calculator{
+    .right-side__calculator{
         width:100%;
         order:2;
     }
 
-    .right-side .calculator .calculator__title{
-        font-size: 25px;
-    }
-
-    .right-side .calculator .calculator__input{
-        width:100%;
-    }
-
-    .right-side .calculator .calculator__button{
-        @include setFont(inherit,18px,none,400);
-        width:100%;
-        text-transform: none;
-    }
     .calulator-toggle{
         background: #dce7ef;
         @include setFont($gray,14px,none,700);

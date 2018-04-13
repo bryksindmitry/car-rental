@@ -1,4 +1,7 @@
 @media(min-width:$smartphone) and (max-width:$tablet){
+    .hide_calculator{
+        display: none;
+    }
 .calculator{
     width:100%;
     background: #dce7ef;
@@ -35,6 +38,7 @@
     }
     &__button{
         @include setFont($white,18px,none,600);
+        width: 100%;
         padding:17px;
         background:linear-gradient(to top,  #f57e06 0%, #ff9716 36%,  #f3a527 100%); 
         text-shadow: #BB4906 1px -3px 2px; 
@@ -56,6 +60,9 @@
     }
 }
 @media(min-width:$tablet) and (max-width:$desktop){
+    .hide_calculator{
+        display: none;
+    }
     .calculator{
         width:100%;
         background: #dce7ef;
@@ -92,6 +99,7 @@
         }
         &__button{
             @include setFont($white,18px,none,600);
+            width: 100%;
             padding:17px;
             background:linear-gradient(to top,  #f57e06 0%, #ff9716 36%,  #f3a527 100%); 
             text-shadow: #BB4906 1px -3px 2px; 

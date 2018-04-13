@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import CategoryList from '../CategoryList';
-import OffersList from '../OffersList';
-import Calculator from '../Calculator';
-export default class Content extends Component{
+import CategoryList from '../../components/CategoryList';
+import OffersList from '../../components/OffersList';
+import Calculator from '../../components/Calculator';
+
+export default class Offers extends Component{
     state = {
         open : false
     }
     render(){
         
         return(
-            <div className="main">
+            <div className={`main ${this.props.open ? "hide_main" : "" }`}>
                 <div className="wrapper main__wrapper">
                     <div className="main-content">
                         <CategoryList/>
@@ -17,7 +18,9 @@ export default class Content extends Component{
                     </div>
                     <div className="right-side">
                         <button className="calulator-toggle" type="button" onClick={this.handleShowCalculator}>Открыть фильтр</button>
-                        <Calculator showCalculator={this.state.open}/>
+                        <div className="right-side__calculator">
+                            <Calculator showCalculator={this.state.open}/>
+                        </div>
                     </div>
                 </div>
             </div>
