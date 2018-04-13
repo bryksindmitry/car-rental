@@ -18,7 +18,7 @@ export default class Main extends Component{
 
     toggleMenu = ()=> {
         
-        this.setState((prevState, props) => {
+        this.setState(() => {
             return {open: !this.state.open};
           })
     }
