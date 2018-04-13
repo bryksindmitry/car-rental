@@ -10,7 +10,7 @@ $brown:#6a573a;
 $light-brown:#a2957a;
 $dark-gray: #423f3c;
 $gray:#797b7d; 
-
+$light-gray: #909090;
 
 
 @mixin setFont($color,$size, $decoration, $weight){
@@ -35,9 +35,11 @@ $gray:#797b7d;
 @import './components/Header/style.scss';
 @import './components/Logo/style.scss';
 @import './components/Menu/style.scss';
-@import './containers/Offers/style.scss';
 @import './components/CategoryList/style.scss';
 @import './components/CategoryButton/style.scss';
 @import './components/OffersList/style.scss';
 @import './components/Offer/style.scss';
 @import './components/Calculator/style.scss';
+@import './components/Price/style.scss';
+
+@import './containers/Offers/style.scss';
