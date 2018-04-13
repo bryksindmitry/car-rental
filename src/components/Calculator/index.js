@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 export default class Calculator extends Component{
     render(){
         return(
-            <div className="calculator">
+            <div className="calculator" style={{display:this.props.showCalculator ? "block" : "none"}}>
             <div className="calculator__title">
                 Find offers
             </div>
