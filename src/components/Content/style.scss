@@ -20,6 +20,10 @@
         cursor: pointer;
         border: none;
     }
+    .calulator-toggle{
+        background: #dce7ef;;
+        @include setFont($gray,14px,none,700);
+    }
     
 }
 @media(min-width:$tablet) and (max-width:$desktop){
@@ -50,6 +54,13 @@
         @include setFont(inherit,18px,none,400);
         width:100%;
         text-transform: none;
+    }
+    .calulator-toggle{
+        background: #dce7ef;
+        @include setFont($gray,14px,none,700);
+        width: 100%;
+        padding: 10px 0;
+        border: none;
     }
 }
 
@@ -87,6 +98,5 @@
         text-transform: none;
     }
 }
-
 
 

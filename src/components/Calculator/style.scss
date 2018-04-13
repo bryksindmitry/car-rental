@@ -1,15 +1,9 @@
-
-
-
 @media(min-width:$smartphone) and (max-width:$tablet){
-
 .calculator{
     width:100%;
     background: #dce7ef;
     border:solid 1px #fff;
     border-radius: 5px;
-    margin-top:46px;
-    margin-bottom: 32px;
     box-shadow: 3px 5px 15px rgba(0,0,0,0.5);
     &__title{
         @include setFont($dark-brown,26px,none,700);
@@ -66,7 +60,6 @@
         background: #dce7ef;
         border:solid 1px #fff;
         border-radius: 5px;
-        margin-top:46px;
         margin-bottom: 32px;
         box-shadow: 3px 5px 15px rgba(0,0,0,0.5);
         &__title{
