@@ -6,7 +6,6 @@ export default class Content extends Component{
     render(){
         return(
             <div className="main">
-               
                 <div className="wrapper main__wrapper">
                     <div className="main-content">
                         <CategoryList/>
