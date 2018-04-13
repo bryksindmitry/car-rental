@@ -6,7 +6,7 @@
         &__title{
             width:100%;
             text-align: center;
-            @include setFont($dark-gray,12px,none,400);
+            @include setFont($dark-gray,14px,none,400);
         }
         &__buttons{
             width:100%;

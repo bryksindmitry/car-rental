@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Header from './Header/index'
+import Header from './Header'
 import Content from './Content'
 
 export default class Main extends Component{

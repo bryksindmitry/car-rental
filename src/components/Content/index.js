@@ -3,10 +3,11 @@ import CategoryList from '../CategoryList';
 import OffersList from '../OffersList';
 import Calculator from '../Calculator';
 export default class Content extends Component{
+    state = {
+        open : false
+    }
     render(){
-        state = {
-            open : false
-        }
+        
         return(
             <div className="main">
                 <div className="wrapper main__wrapper">
@@ -24,8 +25,8 @@ export default class Content extends Component{
         )
     }
     handleShowCalculator = () => {
-        setState(()=>{
-            open: !this.state.open
+        this.setState(()=>{
+           return { open: !this.state.open }
         })
     }
 }
