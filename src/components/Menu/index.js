@@ -6,9 +6,7 @@ export default function Menu(){
     return(
         <nav className="menu">
             {
-                MenuList.map((item)=>{
-                    return  <div className="menu__item"><a href={item} className="menu__link">{item}</a></div>
-                })
+                MenuList.map((item)=><div className="menu__item" key={item}><a href={item} className="menu__link">{item}</a></div>)
             }
         </nav>
     )
