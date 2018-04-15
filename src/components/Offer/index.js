@@ -8,10 +8,10 @@ export default class Offer extends Component{
     }
 
     render(){   
-
+        let {title, description, minPrice, details} = this.props.data;
         let {open} = this.state;
         let detailNode =  this.state.open ? <div className ="offer__detail">
-            <p>Вы решили, что вы будете работать над проблемой №53 из системы отслеживания ошибок, используемой вашей компанией. Разумеется, Git не привязан к какой-то определенной системе </p>
+            <p>{details}</p>
         </div> : "";
 
         let textButton = open ? " - Hide Details":"+ View Details"
@@ -19,13 +19,13 @@ export default class Offer extends Component{
         return(
                 <div className="offer-item">
                     <div className="item-wrapper">
-                    <Price/>
+                    <Price price={minPrice}/>
                     <div className="offer__text">
                         <div className="offer__title">
-                            Duis sed odio sit amet nibh vulputate cursus 
+                            {title} 
                         </div>
                         <div className="offer__description">
-                            Nam nec tellus a odio tincidunt auctor a ornare odio
+                            {description}
                         </div>
                     </div>
                     <button className="offer__view-more" onClick={ this.handleToggle }>
