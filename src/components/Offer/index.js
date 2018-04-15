@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import toggleOpen from '../../decorators/toggleOpen'
 import Price from '../Price';
 
 
-export default class Offer extends Component{
+class Offer extends Component{
     constructor(props){
         super(props);
-        this.state = {
-            open : false
-        }
     }
 
     static propTypes = {
@@ -22,12 +20,12 @@ export default class Offer extends Component{
 
     render(){   
         let {title, description, minPrice, details} = this.props.data;
-        let {open} = this.state;
-        let detailNode =  this.state.open ? <div className ="offer__detail">
+        let {isOpen, toggleOpen} = this.props;
+        let detailNode =  isOpen ? <div className ="offer__detail">
             <p>{details}</p>
         </div> : "";
 
-        let textButton = open ? " - Hide Details":"+ View Details"
+        let textButton = isOpen ? " - Hide Details":"+ View Details"
 
         return(
                 <div className="offer-item">
@@ -41,7 +39,7 @@ export default class Offer extends Component{
                             {description}
                         </div>
                     </div>
-                    <button className="offer__view-more" onClick={ this.handleToggle }>
+                    <button className="offer__view-more" onClick={toggleOpen}>
                         { textButton }  
                     </button>
                     { detailNode }
@@ -49,12 +47,6 @@ export default class Offer extends Component{
                 </div>
             )
     }
-
-    handleToggle = ()=>{
-        this.setState(()=>{
-            return {
-                open : !this.state.open
-            }
-        })
-    }
 }
+
+export default toggleOpen(Offer);

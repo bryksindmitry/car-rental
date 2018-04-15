@@ -1,26 +1,17 @@
 import React, { Component } from 'react'
+import toggleOpen from './decorators/toggleOpen'
 import Header from './components/Header'
 import Offers from './containers/Offers'
 
-export default class Main extends Component{
-    state = {
-        open : false
-    }
-
+class Main extends Component{
     render(){
+        let {isOpen, toggleOpen} = this.props;
         return(
             <div>
-            <Header  open={this.state.open} toggleMenu={this.toggleMenu}/>
-            
-            <Offers open={this.state.open}/>
+            <Header  open={isOpen} toggleMenu={toggleOpen}/>
+            <Offers  menuIsOpen={isOpen}/>
             </div>
         )
     }
-
-    toggleMenu = ()=> {
-        
-        this.setState(() => {
-            return {open: !this.state.open};
-          })
-    }
 }
+export default toggleOpen(Main)
