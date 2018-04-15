@@ -1,10 +1,23 @@
-import React, { Component } from 'react'
-import Price from '../Price'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Price from '../Price';
+
 
 export default class Offer extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            open : false
+        }
+    }
 
-    state = {
-        open : false
+    static propTypes = {
+        data: PropTypes.shape({
+            title:PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+            minPrice: PropTypes.number.isRequired,
+            details:PropTypes.string.isRequired
+        }).isRequired
     }
 
     render(){   

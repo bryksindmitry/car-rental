@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default function Price(props){
         return(
@@ -7,8 +8,12 @@ export default function Price(props){
                     from
                 </span>
                 <span className="price__value">
-                    {props.price}
+                    {`${props.price}.00$`}
                 </span>
             </div>
         )
+}
+
+Price.PropTypes = {
+    price : PropTypes.number.isRequired
 }
