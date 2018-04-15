@@ -6,7 +6,6 @@ import Entrance from '../Entrance'
 
 export default class Header extends Component{
     render(){
-        console.log(this.props.open);
         let  {toggleMenu, open}  = this.props;
         return(
             <div className="App-header">

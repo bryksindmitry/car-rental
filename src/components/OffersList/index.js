@@ -6,7 +6,7 @@ export default class OffersList extends Component{
     render(){
         return(
             <div className="offers-list">
-                {data.offers.map((item)=> <Offer data={item}/>)}
+                {data.offers.map((item)=> <Offer  key= {item.id} data={item}/>)}
             </div>
         )
     }
