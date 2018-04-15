@@ -1,16 +1,12 @@
 import React, { Component } from 'react'
 import Offer from '../Offer'
+import  data from '../../data'
 
 export default class OffersList extends Component{
     render(){
-        let num = 10; // temporary amount 10 offers;
-        let listOffers = [];
-        for(let i = 0; i < 10; i++){
-            listOffers.push(<Offer/>)
-        }
         return(
             <div className="offers-list">
-                  {listOffers}
+                {data.offers.map((item)=> <Offer data={item}/>)}
             </div>
         )
     }
