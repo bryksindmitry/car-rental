@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
-import InputDate from '../InputDate'
+import React, { Component } from 'react';
+import InputDate from '../InputDate';
+import InputString from '../InputString';
+import InputSubmit from '../InputSubmit';
 
 export default class Calculator extends Component{
     render(){
@@ -11,10 +13,7 @@ export default class Calculator extends Component{
             <div className="calculator__wrapper">
                 <div className="calculator__element">
                     <div className="calculator__address">
-                <label className="calculator__label">
-                    Pick-up Location
-                </label>
-                <input className="address_input calculator__input" placeholder="City, State or Airport Code"/>
+                        <InputString labelText={"Pick-up Location"} placeholder={"City, State or Airport Code"} />
                     </div>
                 </div>
                 <div className="calculator__date">
@@ -28,7 +27,7 @@ export default class Calculator extends Component{
                     </div> 
                 </div>
                 <div className="calculator__element">
-                    <input type="submit" value="Get A Quote Now" className="calculator__button"/>
+                    <InputSubmit value={"Get A Quote Now"}/>
                 </div>
             </div>
         </div>   
