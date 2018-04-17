@@ -9,6 +9,6 @@ export default function InputSubmit(props){
     )
 }
 
-InputString.propTypes = {
+InputSubmit.propTypes = {
     value: PropTypes.string.isRequired
 }

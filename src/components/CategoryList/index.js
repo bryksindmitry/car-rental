@@ -1,6 +1,9 @@
 import React, { Component }  from 'react'
+import { connect } from 'react-redux'
+import {changeCategory} from '../../AC'
 import CategoryButton from '../CategoryButton'
-export default class CategoryList extends Component{
+
+class CategoryList extends Component{
     render(){
         return(
             <div className="category">
@@ -9,13 +12,19 @@ export default class CategoryList extends Component{
                             Speciall Offers
                     </div>
                     <div className="category__buttons">
-                        <CategoryButton name={"All Offers"}/>
-                        <CategoryButton name={"Category 1"}/>
-                        <CategoryButton name={"Category 2"}/>
-                        <CategoryButton name={"Category 3"}/>
+                        <CategoryButton name={"All Offers"} handleOnClick={ this.handleCategoryButton }/>
+                        <CategoryButton name={"Category 1"} handleOnClick={ this.handleCategoryButton }/>
+                        <CategoryButton name={"Category 2"} handleOnClick={ this.handleCategoryButton }/>
+                        <CategoryButton name={"Category 3"} handleOnClick={ this.handleCategoryButton }/>
                     </div>
                 </div>
             </div>
         )
     }
+    handleCategoryButton = ()=>{
+     
+        changeCategory(1)
+    }
 }
+
+export default connect(null,{ changeCategory })(CategoryList)
