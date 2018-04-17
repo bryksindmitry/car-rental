@@ -4,6 +4,9 @@ import PropTypes from 'prop-types';
 export default class InputString extends Component{
     constructor(props){
         super(props);
+        this.state = {
+            value:""
+        }
     }
 
     static propTypes = {
@@ -20,9 +23,18 @@ export default class InputString extends Component{
                 <label className="calculator__label">
                     {labelText}
                 </label>
-                <input className="address_input calculator__input" placeholder={placeholder}/>
+                <input  type="text"
+                        className="address_input calculator__input" 
+                        placeholder={placeholder} 
+                        onChange={this.handleChangeValue}
+                        value={this.state.value}/>
             </div>
         )
+    }
+    handleChangeValue = (ev) => {
+        this.setState({
+            value: ev.target.value
+        })
     }
 
 }
