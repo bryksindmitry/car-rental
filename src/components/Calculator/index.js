@@ -4,6 +4,14 @@ import InputString from '../InputString';
 import InputSubmit from '../InputSubmit';
 
 export default class Calculator extends Component{
+    constructor(props){
+        super(props);
+        state = {
+            city:"",
+            checkIn:"",
+            checkOut:""
+        }
+    }
     render(){
         return(
             <div className={`calculator ${this.props.showCalculator ? "hide_calculator" : ""}`}>
