@@ -6,7 +6,7 @@ import InputSubmit from '../InputSubmit';
 export default class Calculator extends Component{
     constructor(props){
         super(props);
-        state = {
+        this.state = {
             city:"",
             checkIn:"",
             checkOut:""

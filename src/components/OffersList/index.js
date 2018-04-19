@@ -11,6 +11,10 @@ class OffersList extends Component{
         )
     }
 }
-export default connect((state)=>({
-    offers: state.offers
-}))(OffersList)
+export default connect(({offers, offersCategory})=>{
+        let { selected } = offersCategory;
+        let filtredOffers = offers.filter(item=> selected ? item.category === selected : item )
+        return {
+            offers : filtredOffers
+        }
+    })(OffersList)
