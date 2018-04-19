@@ -11,6 +11,9 @@ class OffersList extends Component{
         )
     }
 }
-export default connect((state)=>({
-    offers: state.offers
-}))(OffersList)
+export default connect((state)=>{
+    console.log(state);
+    let offers = {
+        offers: state.offers
+    }
+    return offers })(OffersList)
