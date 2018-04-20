@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import toggleOpen from '../../decorators/toggleOpen'
-import CategoryList from '../../components/CategoryList';
-import OffersList from '../../components/OffersList';
+import WrapperCategoryOffers from '../WrapperCategoryOffers';
+import WrapperOffersList from '../WrapperOffersList';
 import Calculator from '../../components/Calculator';
 
 class Offers extends Component{
@@ -11,8 +11,8 @@ class Offers extends Component{
             <div className={`main ${menuIsOpen ? "hide_main" : "" }`}>
                 <div className="wrapper main__wrapper">
                     <div className="main-content">
-                        <CategoryList/>
-                        <OffersList/>    
+                        <WrapperCategoryOffers/>f
+                        <WrapperOffersList/>
                     </div>
                     <div className="right-side">
                         <button className="calulator-toggle" type="button" onClick={toggleOpen}>Открыть фильтр</button>

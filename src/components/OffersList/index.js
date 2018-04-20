@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import {filteredOffersSelector} from '../../selectors'
 import Offer from '../Offer';
-import { connect } from 'react-redux';
 
-class OffersList extends Component{
+
+export  default class OffersList extends Component{
     render(){
         return(
             <div className="offers-list">
@@ -12,6 +11,4 @@ class OffersList extends Component{
         )
     }
 }
-export default connect(state=>({
-    offers: filteredOffersSelector(state)
-}))(OffersList)
+

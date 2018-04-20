@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { changeCategory } from '../../AC'
 import CategoryButton from '../CategoryButton'
 
-class CategoryList extends Component{
+export default  class CategoryList extends Component{
     render(){
         return(
             <div className="category">
@@ -29,4 +29,3 @@ class CategoryList extends Component{
 
 }
  
-export default connect(null, {changeCategory})(CategoryList)
