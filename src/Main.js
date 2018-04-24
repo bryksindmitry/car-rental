@@ -3,6 +3,7 @@ import toggleOpen from './decorators/toggleOpen'
 import Header from './components/Header'
 import Offers from './containers/Offers'
 
+
 class Main extends Component{
     render(){
         let {isOpen, toggleOpen} = this.props;

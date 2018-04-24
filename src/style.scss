@@ -11,6 +11,7 @@ $light-brown:#a2957a;
 $dark-gray: #423f3c;
 $gray:#797b7d; 
 $light-gray: #909090;
+$gold:#dc911f;
 
 
 @mixin setFont($color,$size, $decoration, $weight){
@@ -41,5 +42,6 @@ $light-gray: #909090;
 @import './components/Offer/style.scss';
 @import './components/Calculator/style.scss';
 @import './components/Price/style.scss';
-
+@import './components/Pagination/style';
+@import './components/PaginationButton/style';
 @import './containers/Offers/style.scss';
