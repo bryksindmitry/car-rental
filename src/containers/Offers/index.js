@@ -13,7 +13,7 @@ class Offers extends Component{
                     <div className="main-content">
                         <WrapperCategoryOffers/>
                         <WrapperOffersList/>
-                        <Pagination pages={30}/>
+                        <Pagination pages={10}/>
                     </div>
                     <div className="right-side">
                         <button className="calulator-toggle" type="button" onClick={toggleOpen}>Открыть фильтр</button>
