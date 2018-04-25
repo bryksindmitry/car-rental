@@ -30,5 +30,85 @@ export const offers = [
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida interdum odio ac suscipit. Pellentesque scelerisque euismod rhoncus. Fusce ligula metus, finibus nec tempus quis, luctus ullamcorper nisl.",
             "minPrice": 52,
             "category": 2          
+        },
+        {
+            "id": "5",
+            "title":"Duis sed odio sit amet nibh vulputate cursus",
+            "description": "Nam nec tellus a odio tincidunt auctor a ornare odio",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida interdum odio ac suscipit. Pellentesque scelerisque euismod rhoncus. Fusce ligula metus, finibus nec tempus quis, luctus ullamcorper nisl.",
+            "minPrice": 12,
+            "category":1         
+        },
+        {
+            "id": "6",
+            "title":"Duis sed odio sit amet nibh vulputate cursus",
+            "description": "Nam nec tellus a odio tincidunt auctor a ornare odio",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida interdum odio ac suscipit. Pellentesque scelerisque euismod rhoncus. Fusce ligula metus, finibus nec tempus quis, luctus ullamcorper nisl.",
+            "minPrice": 12,
+            "category":1         
+        },
+        {
+            "id": "7",
+            "title":"Duis sed odio sit amet nibh vulputate cursus",
+            "description": "Nam nec tellus a odio tincidunt auctor a ornare odio",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida interdum odio ac suscipit. Pellentesque scelerisque euismod rhoncus. Fusce ligula metus, finibus nec tempus quis, luctus ullamcorper nisl.",
+            "minPrice": 12,
+            "category":1         
+        },
+        {
+            "id": "8",
+            "title":"Duis sed odio sit amet nibh vulputate cursus",
+            "description": "Nam nec tellus a odio tincidunt auctor a ornare odio",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida interdum odio ac suscipit. Pellentesque scelerisque euismod rhoncus. Fusce ligula metus, finibus nec tempus quis, luctus ullamcorper nisl.",
+            "minPrice": 12,
+            "category":1         
+        },
+        {
+            "id": "9",
+            "title":"Duis sed odio sit amet nibh vulputate cursus",
+            "description": "Nam nec tellus a odio tincidunt auctor a ornare odio",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida interdum odio ac suscipit. Pellentesque scelerisque euismod rhoncus. Fusce ligula metus, finibus nec tempus quis, luctus ullamcorper nisl.",
+            "minPrice": 12,
+            "category":1         
+        },
+        {
+            "id": "10",
+            "title":"Duis sed odio sit amet nibh vulputate cursus",
+            "description": "Nam nec tellus a odio tincidunt auctor a ornare odio",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida interdum odio ac suscipit. Pellentesque scelerisque euismod rhoncus. Fusce ligula metus, finibus nec tempus quis, luctus ullamcorper nisl.",
+            "minPrice": 12,
+            "category":1         
+        },
+        {
+            "id": "11",
+            "title":"Duis sed odio sit amet nibh vulputate cursus",
+            "description": "Nam nec tellus a odio tincidunt auctor a ornare odio",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida interdum odio ac suscipit. Pellentesque scelerisque euismod rhoncus. Fusce ligula metus, finibus nec tempus quis, luctus ullamcorper nisl.",
+            "minPrice": 12,
+            "category":1         
+        },
+        {
+            "id": "12",
+            "title":"Duis sed odio sit amet nibh vulputate cursus",
+            "description": "Nam nec tellus a odio tincidunt auctor a ornare odio",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida interdum odio ac suscipit. Pellentesque scelerisque euismod rhoncus. Fusce ligula metus, finibus nec tempus quis, luctus ullamcorper nisl.",
+            "minPrice": 12,
+            "category":1         
+        },
+        {
+            "id": "13",
+            "title":"Duis sed odio sit amet nibh vulputate cursus",
+            "description": "Nam nec tellus a odio tincidunt auctor a ornare odio",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida interdum odio ac suscipit. Pellentesque scelerisque euismod rhoncus. Fusce ligula metus, finibus nec tempus quis, luctus ullamcorper nisl.",
+            "minPrice": 12,
+            "category":1         
+        },
+        {
+            "id": "14",
+            "title":"Duis sed odio sit amet nibh vulputate cursus",
+            "description": "Nam nec tellus a odio tincidunt auctor a ornare odio",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida interdum odio ac suscipit. Pellentesque scelerisque euismod rhoncus. Fusce ligula metus, finibus nec tempus quis, luctus ullamcorper nisl.",
+            "minPrice": 12,
+            "category":1         
         }
     ]
