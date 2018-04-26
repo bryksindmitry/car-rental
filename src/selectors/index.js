@@ -6,6 +6,19 @@ const offersGetter = state => state.offers
 export const filteredOffersSelector = createSelector(offersGetter, categoryGetter, (offers, offersCategory)=>{
 
     let { selected } = offersCategory;
-    let filtredOffers = offers.filter(item=> selected ? item.category === selected : item )
-    return filtredOffers
-})
+    let filtredOffers = offers.filter(item=> selected ? item.category === selected : item );
+
+    let allPages = [];
+    let lengthOffers = 0;
+    for(let y = 0; y < Math.ceil(filtredOffers.length/10); y++) {
+        let page = [];
+        for (let i = lengthOffers; i < filtredOffers.length; i++) {
+            if(page.length == 10)break;
+            page.push(filtredOffers[i]);
+            lengthOffers++;
+        }
+        allPages.push(page);
+    }
+
+    return allPages
+});

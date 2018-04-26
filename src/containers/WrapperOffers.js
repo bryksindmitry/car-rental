@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
-import {changeCategory} from "../AC";
+import {changeCategory, changePage} from "../AC";
 import CategoryList from "../components/CategoryList";
 
 import OffersList  from '../components/OffersList'
@@ -12,12 +12,13 @@ import Pagination from '../components/Pagination';
 
 class WrapperOffers extends Component{
     render(){
-        const {offers, changeCategory} = this.props;
+        console.log(this.props);
+        const {offers, changeCategory, changePage} = this.props;
         return(
             <div>
                 <CategoryList changeCategory = {changeCategory}/>
-                <OffersList offers={offers}/>
-                <Pagination pages={Math.ceil(offers.length/10)}/>
+                <OffersList offers={offers[0]}/>
+                <Pagination pages={offers.length} changePage = { changePage }/>
             </div>
         )
     }
@@ -26,4 +27,4 @@ class WrapperOffers extends Component{
 
 export default connect(state=>({
     offers: filteredOffersSelector(state)
-}), {changeCategory})(WrapperOffers)
+}), {changeCategory, changePage})(WrapperOffers)

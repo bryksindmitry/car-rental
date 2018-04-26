@@ -41,26 +41,33 @@ export default  class Pagination extends Component{
 
     getNextPage = () => {
         const {current} = this.state;
-        const {pages} = this.props;
+        const {pages, changePage} = this.props;
         if(current !== pages) {
             this.setState({
                 current: current+1
             });
+            changePage(this.state.current)
         }
+
     };
 
     getPrevPage = () => {
         const {current} = this.state;
+        const {changePage} = this.props;
         if(current > 1){
             this.setState({
                 current: current-1
             });
+            changePage(this.state.current)
         }
+
     };
 
     setCurrentPage = (page) =>{
+        const {changePage} = this.props;
         this.setState({
             current: page
         })
+        changePage(this.state.current);
     }
 }
