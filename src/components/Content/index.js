@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import toggleOpen from '../../decorators/toggleOpen'
-import WrapperOffers from '../WrapperOffers'
-import Calculator from '../../components/Calculator';
+import WrapperOffers from '../../containers/WrapperOffers'
+import Calculator from '../Calculator';
 
 
-class Offers extends Component{
+class Content extends Component{
     render(){
         let {isOpen, toggleOpen, menuIsOpen} = this.props;
         return(
@@ -25,4 +25,4 @@ class Offers extends Component{
     }
 }
 
-export default toggleOpen(Offers);
+export default toggleOpen(Content);

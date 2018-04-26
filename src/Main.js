@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import toggleOpen from './decorators/toggleOpen'
 import Header from './components/Header'
-import Offers from './containers/Offers'
+import Content from './components/Content'
 
 
 class Main extends Component{
@@ -10,7 +10,7 @@ class Main extends Component{
         return(
             <div>
             <Header  open={isOpen} toggleMenu={toggleOpen}/>
-            <Offers  menuIsOpen={isOpen}/>
+            <Content  menuIsOpen={isOpen}/>
             </div>
         )
     }
