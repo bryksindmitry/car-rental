@@ -4,8 +4,7 @@ const categoryGetter = state => state.offersCategory
 const offersGetter = state => state.offers
 
 export const filteredOffersSelector = createSelector(offersGetter, categoryGetter, (offers, offersCategory)=>{
-    let { data, page } = offers;
-    let { selected } = offersCategory;
+    let { data, page,  selected} = offers;
     let filtredOffers = data.filter(item=> selected ? item.category === selected : item );
 
     let allPages = [];
@@ -20,5 +19,5 @@ export const filteredOffersSelector = createSelector(offersGetter, categoryGette
         allPages.push(page);
     }
 
-    return {allPagesLength:allPages.length,page: allPages[page-1]}
+    return {allPagesLength:allPages.length,offersPage: allPages[page-1], page}
 });

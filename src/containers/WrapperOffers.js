@@ -17,8 +17,8 @@ class WrapperOffers extends Component{
         return(
             <div>
                 <CategoryList changeCategory = {changeCategory}/>
-                <OffersList offers={offers.page}/>
-                <Pagination pages={offers.allPagesLength} changePage = { changePage }/>
+                <OffersList offers={offers.offersPage}/>
+                <Pagination current={offers.page} pages={offers.allPagesLength} changePage = { changePage }/>
             </div>
         )
     }

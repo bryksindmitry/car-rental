@@ -2,13 +2,9 @@ import React, { Component } from 'react';
 import PaginationButton from '../PaginationButton'
 
 export default  class Pagination extends Component{
-    state = {
-        current: 1
-    };
 
     render(){
-        const { current } = this.state;
-        const { pages } = this.props;
+        const { pages, current } = this.props;
         const pagination =  pages > 1 ? <div className="pagination">
                 <span className="pagination__button">
                     <PaginationButton value={"«prev"} action={this.getPrevPage}/>
@@ -32,7 +28,7 @@ export default  class Pagination extends Component{
         for (let i = 1; i <= pages; i++) {
             pagesNode.push(
                 <span className={`pagination__button`} key={i}>
-                    <PaginationButton active={this.state.current == i} value={i} action={this.setCurrentPage}/>
+                    <PaginationButton active={current == i} value={i} action={this.setCurrentPage}/>
                 </span>
             )
         }
@@ -40,34 +36,23 @@ export default  class Pagination extends Component{
     };
 
     getNextPage = () => {
-        const {current} = this.state;
-        const {pages, changePage} = this.props;
+        const {pages, changePage, current} = this.props;
         if(current !== pages) {
-            this.setState({
-                current: current+1
-            });
-            changePage(this.state.current)
+            changePage(current+1)
         }
 
     };
 
     getPrevPage = () => {
-        const {current} = this.state;
-        const {changePage} = this.props;
+        const {changePage,current} = this.props;
         if(current > 1){
-            this.setState({
-                current: current-1
-            });
-            changePage(this.state.current)
+            changePage(current-1)
         }
 
     };
 
     setCurrentPage = (page) =>{
         const {changePage} = this.props;
-        this.setState({
-            current: page
-        })
-        changePage(this.state.current);
+        changePage(page);
     }
 }

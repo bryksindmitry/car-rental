@@ -3,6 +3,5 @@ import offers from './offers';
 import offersCategory from "./offersCategory";
 
 export default combineReducers({
-    offers,
-    offersCategory,
+    offers
 })
