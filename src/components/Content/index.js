@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import toggleOpen from '../../decorators/toggleOpen'
 import WrapperOffers from '../../containers/WrapperOffers'
 import Calculator from '../Calculator';
-
+import CarList from '../CarsList'
 
 class Content extends Component{
     render(){
@@ -11,7 +11,8 @@ class Content extends Component{
             <div className={`main ${menuIsOpen ? "hide_main" : "" }`}>
                 <div className="wrapper main__wrapper">
                     <div className="main-content">
-                        <WrapperOffers/>
+                        
+                        <CarList/>
                     </div>
                     <div className="right-side">
                         <button className="calulator-toggle" type="button" onClick={toggleOpen}>Открыть фильтр</button>

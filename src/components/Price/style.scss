@@ -31,6 +31,7 @@
         padding:15px 25px;
         text-align: center;
         border: 1px dotted #8c8986; 
+        height: 100%;
         &__from{
             @include setFont($brown,14px, none, 400);
         }
@@ -41,6 +42,7 @@
 }
 @media(min-width:$desktop){  
     .price{
+        height: 100%;
         background:#ffa903;
         border-radius: 5px;
         display: flex;
