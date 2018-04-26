@@ -12,19 +12,20 @@ import Pagination from '../components/Pagination';
 
 class WrapperOffers extends Component{
     render(){
-        console.log(this.props);
-        const {offers, changeCategory, changePage} = this.props;
+        const { offers, changeCategory, changePage} = this.props;
+
         return(
             <div>
                 <CategoryList changeCategory = {changeCategory}/>
-                <OffersList offers={offers[0]}/>
-                <Pagination pages={offers.length} changePage = { changePage }/>
+                <OffersList offers={offers.page}/>
+                <Pagination pages={offers.allPagesLength} changePage = { changePage }/>
             </div>
         )
     }
 }
 
-
 export default connect(state=>({
-    offers: filteredOffersSelector(state)
+
+    offers: filteredOffersSelector(state),
+
 }), {changeCategory, changePage})(WrapperOffers)

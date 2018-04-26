@@ -5,6 +5,5 @@ export function changeCategory(numCategory){
 }
 
 export function changePage(numPage){
-    console.log(numPage)
     return { type: "CHANGE_PAGE", payload: { numPage }}
 }
