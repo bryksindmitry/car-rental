@@ -111,4 +111,21 @@ export const offers = [
             "minPrice": 12,
             "category":1         
         }
-    ]
+    ];
+
+export const cars = [
+    {
+        "id":"1",
+        "img":"http://fakeimg.pl/210x140/",
+        "title":"Small: Economy",
+        "type":"Ford Ka",
+        "cost":50
+    },
+    {
+        "id":"2",
+        "img":"http://fakeimg.pl/210x140/",
+        "title":"Small: Economy",
+        "type":"Ford Ka",
+        "cost":54
+    }
+];

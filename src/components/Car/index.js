@@ -13,7 +13,7 @@ export default class Car extends Component{
                                 Small: Economy
                             </h2>
                             <div className="car-item__desctiption">
-                                (Example of this range: Ford Ka)
+                                (Example of this range: )
                             </div>
                         </div>
                         <button className="car-item__view-more">

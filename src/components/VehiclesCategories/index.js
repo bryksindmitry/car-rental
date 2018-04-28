@@ -2,19 +2,19 @@ import React, { Component }  from 'react'
 import { changeCategory } from '../../AC'
 import CategoryButton from '../CategoryButton'
 
-export default  class CategoryList extends Component{
+export default  class VehiclesCategories extends Component{
     render(){
         return(
             <div className="category">
                 <div className="category__header">
                     <div className="category__title">
-                            Speciall Offers
+                        Speciall Offers
                     </div>
                     <div className="category__buttons">
-                        <CategoryButton name={"All Offers"} category={null} handleOnClick={ this.handleCategoryButton }/>
-                        <CategoryButton name={"Category 1"} category={1} handleOnClick={ this.handleCategoryButton }/>
-                        <CategoryButton name={"Category 2"} category={2} handleOnClick={ this.handleCategoryButton }/>
-                        <CategoryButton name={"Category 3"} category={3} handleOnClick={ this.handleCategoryButton }/>
+                        <CategoryButton name={"All"} category={"All"} handleOnClick={ this.handleCategoryButton }/>
+                        <CategoryButton name={"Small"} category={"Small"} handleOnClick={ this.handleCategoryButton }/>
+                        <CategoryButton name={"Medium"} category={"Medium"} handleOnClick={ this.handleCategoryButton }/>
+                        <CategoryButton name={"Large"} category={"Large"} handleOnClick={ this.handleCategoryButton }/>
                     </div>
                 </div>
             </div>
@@ -27,4 +27,4 @@ export default  class CategoryList extends Component{
 
 
 }
- 
+
