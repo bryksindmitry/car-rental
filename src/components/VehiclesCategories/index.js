@@ -8,7 +8,7 @@ export default  class VehiclesCategories extends Component{
             <div className="category">
                 <div className="category__header">
                     <div className="category__title">
-                        Speciall Offers
+                        Cars
                     </div>
                     <div className="category__buttons">
                         <CategoryButton name={"All"} category={"All"} handleOnClick={ this.handleCategoryButton }/>

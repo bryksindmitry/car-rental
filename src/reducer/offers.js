@@ -12,7 +12,7 @@ export default (offersState = defaultOffers, action) => {
 
     switch(type){
         case CHANGE_PAGE: return  { data: offersState.data , page: payload.numPage };
-        case CHANGE_CATEGORY: return  {data: offersState.data, selected: payload.numCategory, page: 1 }
+        case CHANGE_CATEGORY: return  { data: offersState.data, selected: payload.numCategory, page: 1 }
     }
     return offersState
 }

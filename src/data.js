@@ -119,13 +119,15 @@ export const cars = [
         "img":"http://fakeimg.pl/210x140/",
         "title":"Small: Economy",
         "type":"Ford Ka",
-        "cost":50
+        "cost":50,
+        "category" : "Small"
     },
     {
         "id":"2",
         "img":"http://fakeimg.pl/210x140/",
         "title":"Small: Economy",
         "type":"Ford Ka",
-        "cost":54
+        "cost":54,
+        "category:": "Large"
     }
 ];
