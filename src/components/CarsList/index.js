@@ -9,14 +9,13 @@ export default class CarsList extends Component{
 
     render(){
         const { cars } = this.props;
-        let carsList = cars.data.map( car => {
+        let carsList = cars.map( car => {
             return(
                 <div className="cars-list__item" key={car.id}>
                     <Car car={car}/>
                 </div>
             )
         })
-
         return(
             <div className="cars-list">
                 {carsList}

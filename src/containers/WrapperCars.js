@@ -9,12 +9,14 @@ import Pagination from '../components/Pagination';
 
 class WrapperCars extends Component{
     render(){
-        const { cars, changeCategory } = this.props
+        console.log(this.props);
+        const { cars, changeCategory, changePage } = this.props;
+        console.log(cars);
         return(
             <div>
                 <VehiclesCategories changeCategory={changeCategory} />
-                <CarsList cars={cars}/>
-
+                <CarsList cars={cars.carsPage}/>
+                <Pagination currentPage={cars.page} countPages={cars.allPagesLength} returnPageNumber = { changePage }/>
             </div>
         )
     }
@@ -22,6 +24,6 @@ class WrapperCars extends Component{
 
 export default connect(state=>({
 
-    cars: state.cars
+    cars: filteredCarsSelector(state)
 
 }), {changeCategory, changePage})(WrapperCars)

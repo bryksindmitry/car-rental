@@ -11,7 +11,7 @@ export default  class VehiclesCategories extends Component{
                         Cars
                     </div>
                     <div className="category__buttons">
-                        <CategoryButton name={"All"} category={"All"} handleOnClick={ this.handleCategoryButton }/>
+                        <CategoryButton name={"All"} category={null} handleOnClick={ this.handleCategoryButton }/>
                         <CategoryButton name={"Small"} category={"Small"} handleOnClick={ this.handleCategoryButton }/>
                         <CategoryButton name={"Medium"} category={"Medium"} handleOnClick={ this.handleCategoryButton }/>
                         <CategoryButton name={"Large"} category={"Large"} handleOnClick={ this.handleCategoryButton }/>

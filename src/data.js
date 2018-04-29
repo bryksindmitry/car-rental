@@ -128,6 +128,30 @@ export const cars = [
         "title":"Small: Economy",
         "type":"Ford Ka",
         "cost":54,
-        "category:": "Large"
+        "category": "Large"
+    },
+    {
+        "id":"3",
+        "img":"http://fakeimg.pl/210x140/",
+        "title":"Small: Economy",
+        "type":"Ford Ka",
+        "cost":54,
+        "category": "Medium"
+    },
+    {
+        "id":"4",
+        "img":"http://fakeimg.pl/210x140/",
+        "title":"Small: Economy",
+        "type":"Ford Ka",
+        "cost":123,
+        "category": "Medium"
+    },
+    {
+        "id":"5",
+        "img":"http://fakeimg.pl/210x140/",
+        "title":"Small: Economy",
+        "type":"Ford Ka",
+        "cost":534,
+        "category": "Medium"
     }
 ];

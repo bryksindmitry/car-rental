@@ -10,7 +10,6 @@ import Pagination from '../components/Pagination';
 class WrapperOffers extends Component{
     render(){
         const { offers, changeCategory, changePage} = this.props;
-
         return(
             <div>
                 <CategoryList changeCategory = {changeCategory}/>
