@@ -1,0 +1,59 @@
+// @mixin setFont($color,$size, $decoration, $weight)
+
+@media(min-width:$smartphone) and (max-width:$tablet){
+    .price--light{
+        order:2;
+        background:#fbf7f1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;  
+        padding:15px 25px;
+        text-align: center;
+        border: 1px dotted #8c8986; 
+        &__from{
+            @include setFont($brown,14px, none, 400);
+        }
+        &__value{
+            @include setFont($brown,17px, none, 600);
+        }
+    }
+}
+
+@media(min-width:$tablet) and (max-width:$desktop){
+
+    .price--light{
+        background:#fbf7f1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;  
+        padding:15px 25px;
+        text-align: center;
+        border: 1px dotted #8c8986; 
+        &__from{
+            @include setFont($brown,14px, none, 400);
+        }
+        &__value{
+            @include setFont($brown,17px, none, 600);
+        }
+    }
+}
+@media(min-width:$desktop){  
+    .price--light{
+        background:#fbf7f1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;  
+        padding:15px 25px;
+        text-align: center;
+        border: 1px dotted #8c8986; 
+        &__from{
+            @include setFont($brown,14px, none, 400);
+        }
+        &__value{
+            @include setFont($brown,17px, none, 600);
+        }
+    }
+}

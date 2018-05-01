@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import PropsTypes from 'prop-types';
 
+import CarPrice from '../CarPrice';
+import InputSubmit from '../InputSubmit';
+
 export default class Car extends Component{
 
     static propTypes = {
@@ -20,25 +23,23 @@ export default class Car extends Component{
                 <div className="car-item__image">
                     <img src={img}/>
                 </div>
-                <div className="car-item__text">
-                    <h2 className="car__title">
-                        {title}
-                    </h2>
-                    <div className="car-item__desctiption">
-                        (Example of this range: {type} )
+                <div className="car-item__details">
+                    <div className="car-item__text">
+                        <h2 className="car__title">
+                            {title}
+                        </h2>
+                        <div className="car-item__desctiption">
+                            (Example of this range: {type} )
+                        </div>
                     </div>
+                    <button className="car-item__view-more">
+                            + View Details
+                    </button>
                 </div>
-                <button className="car-item__view-more">
-                        + View Details
-                </button>
                 <div className="car-item__price">
-                    <div className="price">
-                        <span className="price__from">
-                            from
-                        </span>
-                        <span className="price__value">
-                            {`$ ${cost}.00`}
-                        </span>
+                    <CarPrice price = {cost}/>
+                    <div className="car-item__book">
+                        <InputSubmit value={"Book Now"}/>
                     </div>
                 </div>
             </div>

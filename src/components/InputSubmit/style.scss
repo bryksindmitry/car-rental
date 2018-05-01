@@ -1,0 +1,38 @@
+@media(min-width:$smartphone) and (max-width:$tablet){
+
+    .inputSubmit{
+        @include setFont($white,18px,none,600);
+        width: 100%;
+        padding:17px;
+        background:linear-gradient(to top,  #f57e06 0%, #ff9716 36%,  #f3a527 100%); 
+        text-shadow: #BB4906 1px -3px 2px; 
+        border:solid 1px #be650c;
+        border-radius: 5px;
+        box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+    }
+}
+
+@media(min-width:$tablet) and (max-width:$desktop){
+        .inputSubmit{
+            @include setFont($white,18px,none,600);
+            width: 100%;
+            padding:17px;
+            background:linear-gradient(to top,  #f57e06 0%, #ff9716 36%,  #f3a527 100%); 
+            text-shadow: #BB4906 1px -3px 2px; 
+            border:solid 1px #be650c;
+            border-radius: 5px;
+            box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+        }
+    }
+
+@media(min-width:$desktop){
+    .inputSubmit{
+        @include setFont($white,18px,none,600);
+        padding:17px;
+        background:linear-gradient(to top,  #f57e06 0%, #ff9716 36%,  #f3a527 100%); 
+        text-shadow: #BB4906 1px -3px 2px; 
+        border:solid 1px #be650c;
+        border-radius: 5px;
+        box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+    }
+}
