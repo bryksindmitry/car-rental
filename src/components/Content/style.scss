@@ -20,6 +20,12 @@
     .right-side__calculator {
 
     }
+    .right-side__advertising{
+        margin-top:10px;
+    }
+    .right-side__advertising:nth-child(1){
+        margin: 0;
+    }
     .calulator-toggle{
         z-index: 2;
         display: block;
@@ -57,6 +63,12 @@
         padding: 10px 0;
         border: none;
     }
+    .right-side__advertising{
+        margin-top:10px;
+    }
+    .right-side__advertising:nth-child(1){
+        margin: 0;
+    }
 }
 
 @media(min-width:$desktop){
@@ -91,6 +103,12 @@
         @include setFont(inherit,18px,none,400);
         width:100%;
         text-transform: none;
+    }
+    .right-side__advertising{
+        margin-top:10px;
+    }
+    .right-side__advertising:nth-child(1){
+        margin: 0;
     }
 }
 
