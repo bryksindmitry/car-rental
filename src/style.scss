@@ -14,6 +14,7 @@ $light-gray: #909090;
 $gold:#dc911f;
 
 
+
 @mixin setFont($color,$size, $decoration, $weight){
     color:$color;
     text-decoration: $decoration;
@@ -49,4 +50,5 @@ $gold:#dc911f;
 @import './components/CarsList/style.scss';
 @import './components/Car/style.scss';
 @import './components/CarPrice/style.scss';
+@import './components/CarProperty/style.scss';
 @import './components/Advertising/style.scss';

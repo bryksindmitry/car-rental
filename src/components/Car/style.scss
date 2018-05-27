@@ -1,10 +1,4 @@
-.car-item{
-    background: #fbf7f1;
-    border-radius: 5px;
-    display: flex; 
-    justify-content: space-between;
 
-}
 
 @media(min-width:$smartphone) and (max-width:$tablet){
     .car-item{
@@ -69,10 +63,23 @@
         display: flex; 
         justify-content: space-between;
         &__image{
-
+            flex-basis: 26%;
+        }
+        &__details{
+            flex-basis: 36%;
         }
         &__text{
-            text-align: center
+          
+        }
+        &__title{
+            margin: 15px 0;
+            @include setFont($dark-brown,22px,none,400);
+        }
+        &__description{
+            @include setFont($light-gray,16px,none,400);
+        }
+        &__list-properties{
+            margin: 20px 0;
         }
         &__view-more{
             border: none;
@@ -80,6 +87,7 @@
             text-decoration: underline;
             background: #ffffff;
             cursor: pointer;
+            flex-basis: 22%;
         }
         &__price{
         }

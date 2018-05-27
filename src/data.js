@@ -120,7 +120,13 @@ export const cars = [
         "title":"Small: Economy",
         "type":"Ford Ka",
         "cost":50,
-        "category" : "Small"
+        "category" : "Small",
+        "property":{
+            "passengers":"2",
+            "luggage":"3",
+            "dors":"2",
+            "transmission":"M"
+        }
     },
     {
         "id":"2",
@@ -128,7 +134,13 @@ export const cars = [
         "title":"Small: Economy",
         "type":"Ford Ka",
         "cost":54,
-        "category": "Large"
+        "category": "Large",
+        "property":{
+            "passengers":"4",
+            "luggage":"4",
+            "dors":"4",
+            "transmission":"A"
+        }
     },
     {
         "id":"3",
@@ -136,7 +148,13 @@ export const cars = [
         "title":"Small: Economy",
         "type":"Ford Ka",
         "cost":54,
-        "category": "Medium"
+        "category": "Medium",
+        "property":{
+            "passengers":"4",
+            "luggage":"4",
+            "dors":"4",
+            "transmission":"M"
+        }
     },
     {
         "id":"4",
@@ -144,7 +162,13 @@ export const cars = [
         "title":"Small: Economy",
         "type":"Ford Ka",
         "cost":123,
-        "category": "Medium"
+        "category": "Medium", 
+       "property":{
+            "passengers":"4",
+            "luggage":"4",
+            "dors":"4",
+            "transmission":"M"
+        }
     },
     {
         "id":"5",
@@ -152,6 +176,12 @@ export const cars = [
         "title":"Small: Economy",
         "type":"Ford Ka",
         "cost":534,
-        "category": "Medium"
+        "category": "Medium",
+        "property":{
+            "passengers":"4",
+            "luggage":"4",
+            "dors":"4",
+            "transmission":"A"
+        }
     }
 ];

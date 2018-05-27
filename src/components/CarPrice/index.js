@@ -8,7 +8,7 @@ export default function CarPrice(props){
                     Price:
                 </span>
                 <span className="price--light__value">
-                    {`${props.price}.00$`}
+                    {`$ ${props.price}.00`}
                 </span>
             </div>
         )
