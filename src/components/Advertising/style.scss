@@ -5,17 +5,24 @@
     border-radius:3px;
     border-top: solid 1px #c7c4bb;
     width:221px;
+    &__header{
+       display: flex; 
+    }
+    &__image{
+        flex-basis: 25%;
+        padding:15px;
+    }
+    &__image i{
+        font-size: 65px;
+        color:$orange;
+    }
     &__title{
-        font-size:24px;
-        color:#573400;
-        text-align: center;
-        font-weight:600;
-        padding: 33px 0;
+        @include setFont($dark-brown,24px,none,700);
+        padding: 15px 0;
+        flex-basis: 75%;
     }
     &__description{
-        font-size: 17px;
-        color:#757370;
-        font-weight:600;
+        @include setFont(#757370,17px,none,700);
         padding: 0px   33px 10px  15px;
     }
     &__button{
@@ -25,12 +32,10 @@
 
 .ad_button{
     width:100%;
+    @include setFont(#877559,18px,none,300);
     background:linear-gradient(to top, #f0efef, #fbfbfb);
     border: solid 1px #c7c4bb;
     box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-    color:#877559;
-    font-size:18px;
-    font-weight:300;
     padding:12px;
     border-radius: 5px;
 }
