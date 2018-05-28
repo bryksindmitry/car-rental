@@ -11,7 +11,6 @@ class OffersPage extends Component{
             <div className={`main ${menuIsOpen ? "hide_main" : "" }`}>
                 <div className="wrapper main__wrapper">
                     <div className="main-content">
-
                         <WrapperOffers/>
                     </div>
                     <div className="right-side">
