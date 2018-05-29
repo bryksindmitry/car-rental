@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
 import {changeCategory, changePage} from "../AC";
-import VehiclesCategories from "../components/VehiclesCategories";
+import LocationButton from "../components/LocationsButtons";
 import CarsList  from '../components/CarsList'
 import {filteredCarsSelector} from "../selectors";
-import Pagination from '../components/Pagination';
+import LocationsList from "../components/LocationsList";
 
-
-class WrapperCars extends Component{
+class WrapperLocations extends Component{
     render(){
         const { cars, changeCategory, changePage } = this.props;
         return(
             <div>
-                <VehiclesCategories changeCategory={changeCategory} />
-                <CarsList cars={cars.carsPage}/>
-                <Pagination currentPage={cars.page} countPages={cars.allPagesLength} returnPageNumber = { changePage }/>
+                <LocationButton/>
+                <LocationsList/>
             </div>
         )
     }
@@ -24,4 +22,4 @@ export default connect(state=>({
 
     cars: filteredCarsSelector(state)
 
-}), {changeCategory, changePage})(WrapperCars)
+}), {changeCategory, changePage})(WrapperLocations)

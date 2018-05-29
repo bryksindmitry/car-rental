@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import toggleOpen from '../../decorators/toggleOpen'
 import WrapperOffers from '../../containers/WrapperOffers'
 import Calculator from '../Calculator';
-import CarList from '../CarsList'
 import Advertising from '../Advertising';
 class OffersPage extends Component{
     render(){

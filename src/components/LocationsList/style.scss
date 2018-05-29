@@ -1,0 +1,17 @@
+.location{
+  background: #fff;
+  padding: 20px;
+  &__column{
+    display: inline-block;
+    width:33%;
+  }
+  &__header{
+    @include setFont($dark-brown, 24px, none, 700);
+  }
+  &__country{
+    margin-top: 10px;
+  }
+}
+.country{
+  @include setFont(#baaa85, 14px, none, 400);
+}
