@@ -4,6 +4,7 @@ import CarsPage from '../CarsPage';
 import OffersPage from '../OffersPage';
 import Locations from '../Locations';
 import About from '../About';
+import ContactPage from '../ContactPage';
 
 class Content extends Component{
     render(){
@@ -12,7 +13,8 @@ class Content extends Component{
             //<CarsPage/>
           // <OffersPage/>
           //  <Locations/>
-            <About/>
+           // <About/>
+            <ContactPage/>
         )
     }
 }

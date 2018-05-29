@@ -16,14 +16,14 @@ export default class InputString extends Component{
 
     render(){
 
-        let {labelText, placeholder} = this.props;
+        const {type, labelText, placeholder} = this.props;
 
         return(
             <div>
                 <label className="calculator__label">
                     {labelText}
                 </label>
-                <input  type="text"
+                <input  type={type}
                         className="address_input calculator__input" 
                         placeholder={placeholder} 
                         onChange={this.handleChangeValue}
