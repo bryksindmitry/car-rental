@@ -1,7 +1,13 @@
 .article{
   background: #fff;
   padding:20px;
-  &__header{
+  line-height:1.8;
+  &__title{
+    @include setFont($dark-brown, 18px, none, 700 );
+
+  }
+  &__text{
+    @include setFont(#8a877f, 14px, none, 400 );
 
   }
   &__list-advantages{

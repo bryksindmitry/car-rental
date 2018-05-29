@@ -5,10 +5,10 @@ export default  class AboutArticle extends Component{
     render(){
         return(
             <div className="article">
-                <div className="article__header">
+                <div className="article__title">
                     Duis sed odio sit amet nibh vulputate cursus
                 </div>
-                <div className="artilce__text">
+                <div className="article__text">
                     Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
                     lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
                     Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
@@ -18,7 +18,7 @@ export default  class AboutArticle extends Component{
                     Proin condimentum fermentum nunc. Etiam pharetra,
                     erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.
                 </div>
-                <div className="article__header">
+                <div className="article__title">
                     Sed non  mauris vitae erat consequat auctor eu in elit.
                 </div>
                 <div className="article__list-advantages">
@@ -41,7 +41,7 @@ export default  class AboutArticle extends Component{
                         <Advantage/>
                     </div>
                 </div>
-                <div className="artilce__text">
+                <div className="article__text">
                     Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
                     Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
                     Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
