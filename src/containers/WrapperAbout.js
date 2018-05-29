@@ -3,16 +3,16 @@ import {connect} from "react-redux";
 import {changeCategory, changePage} from "../AC";
 
 import {filteredCarsSelector} from "../selectors";
-import LocationsList from "../components/LocationsList";
-import LocationButton from "../components/LocationsButtons";
+import AboutHeader from "../components/AboutHeader";
+import AboutArticle from "../components/AboutArticle";
 
-class WrapperLocations extends Component{
+class WrapperAbout extends Component{
     render(){
         const { cars, changeCategory, changePage } = this.props;
         return(
             <div>
-                <LocationButton/>
-                <LocationsList/>
+                <AboutHeader/>
+                <AboutArticle/>
             </div>
         )
     }
@@ -22,4 +22,4 @@ export default connect(state=>({
 
     cars: filteredCarsSelector(state)
 
-}), {changeCategory, changePage})(WrapperLocations)
+}), {changeCategory, changePage})(WrapperAbout)

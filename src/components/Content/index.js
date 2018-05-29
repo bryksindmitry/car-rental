@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import toggleOpen from '../../decorators/toggleOpen'
-import CarsPage from '../CarsPage'
-import OffersPage from '../OffersPage'
-import Locations from '../Locations'
+import CarsPage from '../CarsPage';
+import OffersPage from '../OffersPage';
+import Locations from '../Locations';
+import About from '../About';
 
 class Content extends Component{
     render(){
@@ -10,7 +11,8 @@ class Content extends Component{
         return(
             //<CarsPage/>
           // <OffersPage/>
-            <Locations/>
+          //  <Locations/>
+            <About/>
         )
     }
 }

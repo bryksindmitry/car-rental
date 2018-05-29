@@ -1,0 +1,15 @@
+.article{
+  background: #fff;
+  padding:20px;
+  &__header{
+
+  }
+  &__list-advantages{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__advantage{
+    margin-top: 10px;
+  }
+}
