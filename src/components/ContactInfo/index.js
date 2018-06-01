@@ -4,14 +4,14 @@ export default class ContactInfo extends Component{
     render(){
         return(
             <div className="information">
-                <div class="information__image">
-                    <i class="fas fa-phone-square"></i>
+                <div className="information__image">
+                    <i className="fas fa-phone-square"></i>
                 </div>
-                <div class="information__text">
-                    <div class="title">
+                <div className="information__description">
+                    <div className="information__title">
                         Phone:
                     </div>
-                    <div class="value">
+                    <div className="information__text">
                         123456789
                     </div>
                 </div>
