@@ -19,7 +19,8 @@ export default  class WrapperAdvertising extends Component{
     }
     getAdvertising = ( repeats,num = 0, array = []) => {
         if(num == repeats)return array;
-        array.push(<Advertising type={"flag"}
+        array.push(<Advertising key={num}
+                                type={"flag"}
                                 title={"Rental Locations"}
                                 description={"Duis sed odio sit amet nibh vulputate cursus a sit amet "}
                                 button={"Find Location Now"} />);
