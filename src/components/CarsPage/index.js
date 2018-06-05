@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import WrapperCars from '../../containers/WrapperCars'
-import Advertising from '../Advertising'
-
+import WrapperAdvertising from '../../containers/WrapperAdvertising'
 export default class CarsPage extends Component{
     render(){
         const {menuIsOpen} = this.props;
@@ -13,13 +12,7 @@ export default class CarsPage extends Component{
                     </div>
                     <div className="right-side">
                         <div className="right-side__advertising">
-                            <Advertising type={"flag"} title={"Rental Locations"} description={"Duis sed odio sit amet nibh vulputate cursus a sit amet "}  button={"Find Location Now"} />
-                        </div>
-                        <div className="right-side__advertising">
-                            <Advertising type={"flag"} title={"Rental Locations"} description={"Duis sed odio sit amet nibh vulputate cursus a sit amet "}  button={"Find Location Now"} />
-                        </div>
-                        <div className="right-side__advertising">
-                            <Advertising type={"flag"} title={"Rental Locations"} description={"Duis sed odio sit amet nibh vulputate cursus a sit amet "}  button={"Find Location Now"} />
+                          <WrapperAdvertising repeats={3}/>
                         </div>
                     </div>
                 </div>

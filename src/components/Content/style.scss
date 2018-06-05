@@ -64,8 +64,10 @@
         padding: 10px 0;
         border: none;
     }
-    .right-side__advertising{
-        margin-top:10px;
+    .right-side__advertising > div{
+        margin:10px 0;
+        display: flex;
+        justify-content: space-around;
     }
     .right-side__advertising:nth-child(1){
         margin: 0;
