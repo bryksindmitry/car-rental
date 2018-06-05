@@ -13,8 +13,8 @@ class Content extends Component{
             //<CarsPage/>
           // <OffersPage/>
           //  <Locations/>
-           // <About/>
-            <ContactPage/>
+            <About/>
+        // <ContactPage/>
         )
     }
 }
