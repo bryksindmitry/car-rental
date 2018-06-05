@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Advertising from '../Advertising';
 import Contact from '../Contact';
 import ContactInfo from '../ContactInfo';
 
@@ -15,10 +14,10 @@ export default class ContactPage extends Component{
                         </div>
                     </div>
                     <div className="right-side">
-                        <div className="right-side__advertising">
+                        <div className="right-side__info">
                             <ContactInfo/>
                         </div>
-                        <div className="right-side__advertising">
+                        <div className="right-side__info">
                             <ContactInfo/>
                         </div>
                     </div>

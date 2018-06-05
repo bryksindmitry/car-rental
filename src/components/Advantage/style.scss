@@ -1,27 +1,91 @@
-.advantage{
-  width:265px;
-  display: flex;
-  justify-content: space-between;
-  background: #ede9df;
-  padding:10px 5px;
-  box-shadow: 0 -2px 1px rgba(0,0,0,0.3);
-  border-radius: 5px;
-  &__image{
-    padding:0 5px;
-  }
-  &__image i{
-    font-size: 65px;
-    color:$orange;
-  }
-  &__description{
 
+
+
+@media(min-width:$smartphone) and (max-width:$tablet){
+  .advantage{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background: #ede9df;
+    padding:10px 5px;
+    box-shadow: 0 -2px 1px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    &__image{
+      padding:0 5px;
+    }
+    &__image i{
+      font-size: 65px;
+      color:$orange;
+    }
+    &__description{
+
+    }
+    &__title{
+      @include  setFont($dark-brown,16px, none, 700);
+      margin-bottom:10px;
+    }
+    &__text{
+      @include  setFont($dark-gray,14px, none, 400);
+      line-height:1.8;
+    }
   }
-  &__title{
-    @include  setFont($dark-brown,16px, none, 700);
-    margin-bottom:10px;
+}
+@media(min-width:$tablet) and (max-width:$desktop){
+  .advantage{
+    width:265px;
+    display: flex;
+    justify-content: space-between;
+    background: #ede9df;
+    padding:10px 5px;
+    box-shadow: 0 -2px 1px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    &__image{
+      padding:0 5px;
+    }
+    &__image i{
+      font-size: 65px;
+      color:$orange;
+    }
+    &__description{
+
+    }
+    &__title{
+      @include  setFont($dark-brown,16px, none, 700);
+      margin-bottom:10px;
+    }
+    &__text{
+      @include  setFont($dark-gray,14px, none, 400);
+      line-height:1.8;
+    }
   }
-  &__text{
-    @include  setFont($dark-gray,14px, none, 400);
-    line-height:1.8;
+}
+
+@media(min-width:$desktop){
+  .advantage{
+    width:265px;
+    display: flex;
+    justify-content: space-between;
+    background: #ede9df;
+    padding:10px 5px;
+    box-shadow: 0 -2px 1px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    &__image{
+      padding:0 5px;
+    }
+    &__image i{
+      font-size: 65px;
+      color:$orange;
+    }
+    &__description{
+
+    }
+    &__title{
+      @include  setFont($dark-brown,16px, none, 700);
+      margin-bottom:10px;
+    }
+    &__text{
+      @include  setFont($dark-gray,14px, none, 400);
+      line-height:1.8;
+    }
   }
 }
