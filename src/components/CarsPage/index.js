@@ -13,13 +13,13 @@ export default class CarsPage extends Component{
                     </div>
                     <div className="right-side">
                         <div className="right-side__advertising">
-                            <Advertising/> 
+                            <Advertising type={"flag"} title={"Rental Locations"} description={"Duis sed odio sit amet nibh vulputate cursus a sit amet "}  button={"Find Location Now"} />
                         </div>
                         <div className="right-side__advertising">
-                            <Advertising/> 
+                            <Advertising type={"flag"} title={"Rental Locations"} description={"Duis sed odio sit amet nibh vulputate cursus a sit amet "}  button={"Find Location Now"} />
                         </div>
                         <div className="right-side__advertising">
-                            <Advertising/> 
+                            <Advertising type={"flag"} title={"Rental Locations"} description={"Duis sed odio sit amet nibh vulputate cursus a sit amet "}  button={"Find Location Now"} />
                         </div>
                     </div>
                 </div>

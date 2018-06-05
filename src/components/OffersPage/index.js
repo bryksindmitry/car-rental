@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import toggleOpen from '../../decorators/toggleOpen'
 import WrapperOffers from '../../containers/WrapperOffers'
+import WrapperAdvertising from '../../containers/WrapperAdvertising'
 import Calculator from '../Calculator';
-import Advertising from '../Advertising';
+
 class OffersPage extends Component{
     render(){
         let {isOpen, toggleOpen, menuIsOpen} = this.props;
@@ -17,10 +17,7 @@ class OffersPage extends Component{
                         <div className="right-side__calculator">
                             <Calculator showCalculator={isOpen}/>
                             <div className="right-side__advertising">
-                                <Advertising type={"mobile-alt"} title={"Go Mobile"} description={"Duis sed odio sit amet nibh vulputate cursus a sit amet"} button={"Download App Now"}/>
-                            </div>
-                            <div className="right-side__advertising">
-                                <Advertising type={"flag"} title={"Rental Locations"} description={"Duis sed odio sit amet nibh vulputate cursus a sit amet "}  button={"Find Location Now"} /> 
+                                <WrapperAdvertising repeats={3}/>
                             </div>
                         </div>
                     </div>
@@ -30,4 +27,4 @@ class OffersPage extends Component{
     }
 }
 
-export default toggleOpen(OffersPage);
+export default OffersPage;
