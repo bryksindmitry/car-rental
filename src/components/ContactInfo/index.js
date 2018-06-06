@@ -1,21 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export default class ContactInfo extends Component{
-    render(){
-        return(
-            <div className="information">
-                <div className="information__image">
-                    <i className="fas fa-phone-square"></i>
+const ContactInfo = (props) => {
+    return(
+        <div className="information">
+            <div className="information__image">
+                <i className="fas fa-phone-square"></i>
+            </div>
+            <div className="information__description">
+                <div className="information__title">
+                    {`${props.title}:`}
                 </div>
-                <div className="information__description">
-                    <div className="information__title">
-                        Phone:
-                    </div>
-                    <div className="information__text">
-                        123456789
-                    </div>
+                <div className="information__text">
+                    {props.text}
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
+ContactInfo.defaultProps ={
+    title: "Phone",
+    text: '123456789'
+};
+
+ContactInfo.propTypes = {
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired
+};
+
+export default ContactInfo;

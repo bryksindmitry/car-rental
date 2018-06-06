@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function CarPrice(props){
+const CarPrice = (props) =>{
         return(
             <div className="price--light">
                 <span className="price--light__from">
@@ -14,6 +14,8 @@ export default function CarPrice(props){
         )
 }
 
-CarPrice.PropTypes = {
+CarPrice.propTypes = {
     price : PropTypes.number.isRequired
 }
+
+export default CarPrice;

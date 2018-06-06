@@ -2,7 +2,7 @@ import React from 'react';
 
 const MenuList = ["Home", "Special Offers", "Cars", "Locations", "About", "Contact"];
 
-export default function Menu(){
+const Menu = () => {
     return(
         <nav className="menu">
             {
@@ -11,3 +11,5 @@ export default function Menu(){
         </nav>
     )
 }
+
+export default Menu;

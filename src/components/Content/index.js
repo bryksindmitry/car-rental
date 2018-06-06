@@ -11,11 +11,11 @@ class Content extends Component{
         let {isOpen, toggleOpen, menuIsOpen} = this.props;
         return(
           //<CarsPage/>
-        // <OffersPage isOpen={isOpen} toggleOpen={toggleOpen} menuIsOpen={menuIsOpen}/>
+        <OffersPage isOpen={isOpen} toggleOpen={toggleOpen} menuIsOpen={menuIsOpen}/>
 
           // <Locations/>
-            <About/>
-          //<ContactPage/>
+           // <About/>
+         // <ContactPage/>
         )
     }
 }

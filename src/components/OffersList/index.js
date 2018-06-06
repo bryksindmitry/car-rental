@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Offer from '../Offer';
 
 
-export  default class OffersList extends Component{
-    render(){
-        return(
-            <div className="offers-list">
-                { this.props.offers.map((item)=> <Offer key= {item.id} data={item}/>) }
-            </div>
-        )
-    }
+const OffersList = ({offers}) => {
+    return(
+        <div className="offers-list">
+            { offers.map((item)=> <Offer key= {item.id} data={item}/>) }
+        </div>
+    ) 
 }
-
+OffersList.propTypes = {
+    offers: PropTypes.array.isRequired
+}
+export  default OffersList;

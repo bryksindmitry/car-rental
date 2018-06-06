@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Entrance(){
+const Entrance = () => {
     return(
         <div className="entrance">
             <a href="#" className="sign-in">Sign In</a>
@@ -8,3 +8,4 @@ export default function Entrance(){
         </div>
     )
 }
+export default Entrance;
