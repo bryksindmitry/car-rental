@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
- const CarProperty = (props) => {
-    const {type, quantity} = props;
+ const CarProperty = ({type, quantity}) => {
     return(
         <div className="car-property">
             <span className="car-property__icon">

@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Price(props){
+ const Price = ({price}) => {
         return(
             <div className="price">
                 <span className="price__from">
                     from
                 </span>
                 <span className="price__value">
-                    {`${props.price}.00$`}
+                    {`${price}.00$`}
                 </span>
             </div>
         )
@@ -17,3 +17,4 @@ export default function Price(props){
 Price.PropTypes = {
     price : PropTypes.number.isRequired
 }
+export default Price

@@ -2,8 +2,7 @@ import React from 'react';
 import WrapperLocations from '../../containers/WrapperLocations';
 import WrapperAdvertising from '../../containers/WrapperAdvertising';
 
- const Locations = (props) => {
-    const {menuIsOpen} =  props;
+ const Locations = ({menuIsOpen}) => {
     return(
         <div className={`main ${menuIsOpen ? "hide_main" : "" }`}>
             <div className="wrapper main__wrapper">

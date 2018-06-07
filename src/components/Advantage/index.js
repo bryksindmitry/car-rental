@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Advantage = (props) => {
-    let { type, title, text} = props;
+const Advantage = ({ type, title, text}) => {
     return(
         <div className="advantage">
             <div className="advantage__image">

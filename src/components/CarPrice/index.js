@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CarPrice = (props) =>{
+const CarPrice = ({price}) =>{
         return(
             <div className="price--light">
                 <span className="price--light__from">
                     Price:
                 </span>
                 <span className="price--light__value">
-                    {`$ ${props.price}.00`}
+                    {`$ ${price}.00`}
                 </span>
             </div>
         )

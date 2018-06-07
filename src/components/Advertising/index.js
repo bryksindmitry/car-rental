@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-const Advertising = (props) => {
-    const {type, title, description, button} = props;
+const Advertising = ({type, title, description, button}) => {
     return(
         <div className="advertising">
             <div className="advertising__header">

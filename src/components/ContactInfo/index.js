@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ContactInfo = (props) => {
+const ContactInfo = ({title, text}) => {
     return(
         <div className="information">
             <div className="information__image">
@@ -9,10 +9,10 @@ const ContactInfo = (props) => {
             </div>
             <div className="information__description">
                 <div className="information__title">
-                    {`${props.title}:`}
+                    {`${title}:`}
                 </div>
                 <div className="information__text">
-                    {props.text}
+                    {text}
                 </div>
             </div>
         </div>

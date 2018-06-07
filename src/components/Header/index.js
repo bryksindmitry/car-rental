@@ -5,8 +5,7 @@ import Menu from '../Menu';
 import Entrance from '../Entrance';
 
 
-const Header = (props) => {
-    let  {toggleMenu, open}  = props;
+const Header = ({toggleMenu, open}) => {
     return(
         <div className="App-header">
             <header className="header">
