@@ -24,7 +24,7 @@ const  Car = (props) => {
                 <div className="car-item__list-properties">
                     <CarProperty type={"users"} quantity={property.passengers}/>
                     <CarProperty type={"suitcase"} quantity={property.luggage}/>
-                    <CarProperty type={"car"} quantity={property.dors}/>
+                    <CarProperty type={"car"} quantity={property.doors}/>
                     <CarProperty type={"cogs"} quantity={property.transmission}/>
                 </div>
             </div>

@@ -124,7 +124,7 @@ export const cars = [
         "property":{
             "passengers":"2",
             "luggage":"3",
-            "dors":"2",
+            "doors":"2",
             "transmission":"M"
         }
     },
@@ -138,7 +138,7 @@ export const cars = [
         "property":{
             "passengers":"4",
             "luggage":"4",
-            "dors":"4",
+            "doors":"4",
             "transmission":"A"
         }
     },
@@ -152,7 +152,7 @@ export const cars = [
         "property":{
             "passengers":"4",
             "luggage":"4",
-            "dors":"4",
+            "doors":"4",
             "transmission":"M"
         }
     },
@@ -166,7 +166,7 @@ export const cars = [
        "property":{
             "passengers":"4",
             "luggage":"4",
-            "dors":"4",
+            "doors":"4",
             "transmission":"M"
         }
     },
@@ -180,7 +180,7 @@ export const cars = [
         "property":{
             "passengers":"4",
             "luggage":"4",
-            "dors":"4",
+            "doors":"4",
             "transmission":"A"
         }
     }

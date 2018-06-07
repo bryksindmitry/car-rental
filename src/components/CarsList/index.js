@@ -5,25 +5,28 @@ import Car from '../Car'
 
 export default class CarsList extends Component{
     static propTypes = {
-
+        cars: PropTypes.array.isRequired
     }
 
     render(){
 
         const { cars } = this.props;
 
-        let carsList = cars.map( car => {
-            console.log(car)
-            return(
-                <div className="cars-list__item" key={car.id}>
-                    <Car car={car}/>
-                </div>
-            )
-        })
+
         return(
             <div className="cars-list">
-                {carsList}
+                {this.countCars(cars)}
             </div>
         )
     }
+
+    countCars = ( array, num = 0, list =[]) =>{
+        if(num == array.length)return list;
+        list.push(<div className="cars-list__item" key={array[num].id}>
+                        <Car car={array[num]}/>
+                  </div>);
+        return this.countCars(array, num+1, list);
+
+    }
 }
+

@@ -14,7 +14,7 @@ import PropTypes from 'prop-types'
 
 CarProperty.propTypes = {
     type: PropTypes.string.isRequired,
-    quantity: PropTypes.number.isRequired
+    quantity: PropTypes.string.isRequired
 }
 
 export default CarProperty;
