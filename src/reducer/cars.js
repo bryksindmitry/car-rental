@@ -5,7 +5,7 @@ const defaultCars = {
     data : cars,
     page:1,
     category: null
-}
+};
 
 export default (stateCars = defaultCars, action) => {
     const { type, payload } = action;

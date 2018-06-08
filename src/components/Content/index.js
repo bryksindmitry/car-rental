@@ -10,8 +10,8 @@ class Content extends Component{
     render(){
         let {isOpen, toggleOpen, menuIsOpen} = this.props;
         return(
-          <CarsPage/>
-       // <OffersPage isOpen={isOpen} toggleOpen={toggleOpen} menuIsOpen={menuIsOpen}/>
+         // <CarsPage/>
+        <OffersPage isOpen={isOpen} toggleOpen={toggleOpen} menuIsOpen={menuIsOpen}/>
 
           // <Locations/>
            // <About/>

@@ -18,11 +18,11 @@ export default class InputDate extends Component{
         let {labelText, placeholder } = this.props;
         return(
             <div>
-                <label className="calculator__label">
+                <label className="filter__label">
                     {labelText}       
                 </label>
                 <input  type="date" 
-                        className="date_input calculator__input"
+                        className="date_input filter__input"
                         placeholder={placeholder}
                         onChange={this.handleChangeValue}
                         value={this.state.value}/> 

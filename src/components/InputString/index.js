@@ -20,11 +20,11 @@ export default class InputString extends Component{
 
         return(
             <div>
-                <label className="calculator__label">
+                <label className="filter__label">
                     {labelText}
                 </label>
                 <input  type={type}
-                        className="address_input calculator__input" 
+                        className="address_input filter__input"
                         placeholder={placeholder} 
                         onChange={this.handleChangeValue}
                         value={this.state.value}/>

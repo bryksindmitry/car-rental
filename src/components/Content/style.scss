@@ -15,10 +15,10 @@
     .right-side {
         order: 1;
     }
-    .right-side__calculator{
+    .right-side__filter{
         width:100%;
     }
-    .right-side__calculator {
+    .right-side__filter {
 
     }
     .right-side__advertising .advertising{
@@ -55,7 +55,7 @@
     .right-side{
         width: 100%;
     }
-    .right-side__calculator{
+    .right-side__filter{
         width:100%;
         order:2;
     }
@@ -96,21 +96,21 @@
     .right-side{
        flex-basis: 20%;
     }
-    .right-side .calculator{
+    .right-side .filter{
         width:100%;
         
     }
 
 
-    .right-side .calculator .calculator__title{
+    .right-side .filter .filter__title{
         font-size: 25px;
     }
 
-    .right-side .calculator .calculator__input{
+    .right-side .filter .filter__input{
         width:100%;
     }
 
-    .right-side .calculator .calculator__button{
+    .right-side .filter .filter__button{
         @include setFont(inherit,18px,none,400);
         width:100%;
         text-transform: none;

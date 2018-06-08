@@ -1,8 +1,8 @@
 @media(min-width:$smartphone) and (max-width:$tablet){
-    .hide_calculator{
+    .hide_filter{
         display: none;
     }
-.calculator{
+.filter{
     width:100%;
     background: #dce7ef;
     border:solid 1px #fff;
@@ -60,10 +60,10 @@
     }
 }
 @media(min-width:$tablet) and (max-width:$desktop){
-    .hide_calculator{
+    .hide_filter{
         display: none;
     }
-    .calculator{
+    .filter{
         width:100%;
         background: #dce7ef;
         border:solid 1px #fff;
@@ -122,7 +122,7 @@
 }
 
 @media(min-width:$desktop){
-    .calculator{
+    .filter{
         width:100%;
         background: #dce7ef;
         border:solid 1px #fff;

@@ -7,3 +7,7 @@ export function changeCategory(numCategory){
 export function changePage(numPage){
     return { type: CHANGE_PAGE, payload: { numPage }}
 }
+
+export function submitFilter(result){
+    return { type: "SUBMIT", payload: { result }}
+}
