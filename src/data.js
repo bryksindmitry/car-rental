@@ -5,7 +5,8 @@ export const offers = [
             "description": "Nam nec tellus a odio tincidunt auctor a ornare odio",
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida interdum odio ac suscipit. Pellentesque scelerisque euismod rhoncus. Fusce ligula metus, finibus nec tempus quis, luctus ullamcorper nisl.",
             "minPrice": 12,
-            "category":1         
+            "category":1,
+            "location": "moscow"
         },
         {   
             "id": "2",
@@ -13,7 +14,8 @@ export const offers = [
             "description": "Nam nec tellus a odio tincidunt auctor a ornare odio",
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida interdum odio ac suscipit. Pellentesque scelerisque euismod rhoncus. Fusce ligula metus, finibus nec tempus quis, luctus ullamcorper nisl.",
             "minPrice": 57,
-            "category":2       
+            "category":2,
+            "location": "moscow"
         },
         {
             "id": "3",
@@ -21,7 +23,8 @@ export const offers = [
             "description": "Nam nec tellus a odio tincidunt auctor a ornare odio",
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida interdum odio ac suscipit. Pellentesque scelerisque euismod rhoncus. Fusce ligula metus, finibus nec tempus quis, luctus ullamcorper nisl.",
             "minPrice": 55,
-            "category":3           
+            "category":3,
+            "location": "london"
         },
         {
             "id": "4",

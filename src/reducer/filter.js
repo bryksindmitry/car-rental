@@ -9,8 +9,9 @@ const defaultFilters = {
 
 export default (stateFilter = defaultFilters, action) =>{
     const { type , payload} = action;
+
     switch(type){
-        case "SUBMIT": return stateFilter;
+        case "SUBMIT": return {...payload.result};
     }
     return stateFilter;
 }

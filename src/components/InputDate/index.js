@@ -25,14 +25,17 @@ export default class InputDate extends Component{
                         className="date_input filter__input"
                         placeholder={placeholder}
                         onChange={this.handleChangeValue}
-                        value={this.state.value}/> 
+                        value={this.state.value}/>
             </div>
         )
     }
 
     handleChangeValue = (ev) => {
+
         this.setState({
             value: ev.target.value
         })
+        const {handler} = this.props;
+        handler(this.state.value)
     }
 }

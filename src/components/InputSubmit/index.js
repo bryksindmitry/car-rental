@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 export default function InputSubmit(props){
-    let {value} = props;
+    let {value, handler} = props;
     return(
-        <input type="submit" value={value} className="inputSubmit"/>
+        <input type="submit" value={value} onClick={handler} className="inputSubmit"/>
     )
 }
 

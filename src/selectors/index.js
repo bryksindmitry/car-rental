@@ -2,10 +2,14 @@ import { createSelector } from 'reselect'
 
 const categoryGetter = state => state.offersCategory
 const offersGetter = state => state.offers
+const filtersGetter = state => state.filters;
 
-export const filteredOffersSelector = createSelector(offersGetter, categoryGetter, (offers, offersCategory)=>{
-    let { data, page,  selected} = offers;
-    let filtredOffers = data.filter(item=> selected ? item.category === selected : item );
+
+export const filteredOffersSelector = createSelector(offersGetter, categoryGetter,filtersGetter, (offers, offersCategory, filters)=>{
+    const { location, checkIn, } = filters;
+    const { data, page,  selected} = offers;
+    const filtOf = data.filter(item=> location ? item.location === location : item );
+    const filtredOffers = filtOf.filter(item=> selected ? item.category === selected : item );
 
     let allPages = [];
     let lengthOffers = 0;
@@ -42,3 +46,7 @@ export const filteredCarsSelector = createSelector(carsGetter, (cars)=>{
     console.log(page)
     return {allPagesLength:allPages.length, carsPage: allPages[page-1], page}
 });
+
+const pagination = (rows,num = 0, array = []) =>{
+
+}
